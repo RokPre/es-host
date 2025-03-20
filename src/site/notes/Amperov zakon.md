@@ -12,8 +12,8 @@ Leva stran enečbe enčbe je integral magnetnega polja $\vec{H}$, ki se nahaja n
 
 Desna stran enačbe je integral gostote elektrčnega toka $\vec{J}$ po površini $\vec{A}$. Ta površina $\vec{A}$ je napeta na zanko $\mathcal{L}$. V resnici je to sum vseh tokov, ki sekajo površino $Avec$. Lahko tudi rečemo sum vseh tokov $\vec{i}$, ki so znotraj zanke $\mathcal{L}$.
 
-# Razlaga[^2]
-Amperov zakon trdi, da če naredimo poljubno sklenjeno zanko $\mathcal{L}$ v prostoru in vzamemo sum magnetnega polja $\vec{H}$ na zanki, bo rezultat enak celotnemu toku v zanki. Če napnemo površino po zanki in seštejemo tokove, ki sekajo površino, dobimo tok znotraj zanke $i_{vz}$. 
+# Razlaga
+Amperov zakon[^2] trdi, da če naredimo poljubno sklenjeno zanko $\mathcal{L}$ v prostoru in vzamemo sum magnetnega polja $\vec{H}$ na zanki, bo rezultat enak celotnemu toku v zanki. Če napnemo površino po zanki in seštejemo tokove, ki sekajo površino, dobimo tok znotraj zanke $i_{vz}$. 
 Enačba je tako:
 $$
 \oint_{\mathcal{L}} \vec{B} d\vec{l} = \mu i_{vz}
