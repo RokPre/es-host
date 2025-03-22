@@ -27,7 +27,7 @@ Proces risanja je tak ko pri prejšnjem primeru, začeli bomo čisto na desni, n
 
 
 1. Narišemo sekundarni tok $i_{2}'$, vodoravno,
-2. Narišemo napetost na bremenu $u_{2}'$, pod kotom $\varphi_{b}$ glede na tok $i_{2}'$,
+2. Narišemo napetost na bremenu $u_{2}'$, pod kotom $\varphi_{b}$ glede na tok $i_{2}',$,
 3. Narišemo ohmski padec napetosti na sekundarni strani $R_{2}'i_{2}$, vzporedno z $i_{2}'$,
 4. Narišemo induktivni padec napetostni na sekundarni strani $X_{2}'i_{2}'$, pravokotno navzgor na sekundarni tok $i_{2}'$,
 5. Narišemo inducirano sekundarno napest $e_{2}' = u_{2}' + R_{2}'i_{2}+ + X_{2}'i_{2}'$.
