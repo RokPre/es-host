@@ -105,7 +105,7 @@ Sedaj ko smo prestavili magnetilno vejo, lahko tudi združimo skupaj elemente, k
 Torej najprej smo predpostavili, da je magnetno jedro transformatorja kvalitetno zato, da smo ga lahko premaknili na začetek vezja, potem združimo elemente, ki predstavljajo navitje, na koncu pa zanemarimo magnetilno vejo, zaradi iste predpostavke kot prej, da je jedro kvalitetno. 
 
 **Q: Zakaj nismo že na začetku zanemarili magnetilne veje?**
-A: 
+A: Ker so to različne stopnje poenostavitve. Lahko uporabimo katero koli, z vasko dodatno poenostavitvijo bomo manj natančni.
 
 # Vloga elementov v vezju 
 ## Odprte sponke
