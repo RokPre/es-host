@@ -13,7 +13,7 @@ To so moji zapiski za predmet [Električni stroji](https://fe.uni-lj.si/predmeti
 | [[Predavanje 1\|Predavanje 1]]  | Magnetni krog                                   |
 | [[Predavanje 2\|Predavanje 2]]  | Transformatorji                                 |
 | [[Predavanje 3\|Predavanje 3]]  | Nadomestno vezje transformatorja                |
-| [[Predavanje 4\|Predavanje 4]]  | Vklopni pojav transformatorja                   | 
+| [[Predavanje 4\|Predavanje 4]]  | Izgube                   | 
 | [[Predavanje 5\|predavanje 5]]  | Vklopni pojav transformatorja                   |
 | [[Predavanje 6\|predavanje 6]]  | Trifazni transformator                          |
 | [[Predavanje 7\|predavanje 7]]  | Enofazna obremenitev trifaznega transformatorja |

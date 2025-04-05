@@ -55,6 +55,19 @@ P_{ver} = K_{vr}\left( \frac{f}{50Hz} \right)^{2}\left( \frac{B}{1.5T} \right)^{
 $$
 kjer je $K_{vr}$ faktor materiala. Ta je odvisen od materiala jedra transformatorja. Enota je $\left[ \frac{W}{kg} \right]$. Tipične debeline lamel so med $0.2$ in $0.6$ mm. Frekvenco $f$ in magnetno polje $B$ normiramo na standardne vrednosti $50Hz$ in $1.5T$ za običajno računanje izgub.
 
+# Izgube v navitju
+TODO:
+To je treba znati za kratek stik.
+# Skupne izgube 
+$K_{fe}$ je lastnost železa in je skupek $K_{vr}$ in $K_{h}$.
+
+$$
+P_{fe}=P_{h} + P_{vrt} = K_{fe}\frac{f}{50}\left( \frac{B}{1.5} \right)^{\alpha_{n}}m_{fe}
+$$
+# Izkoristek 
+$$
+\eta = \frac{Poddana}{Psprejeta} < 1
+$$
 
 ---
 Naslednje poglavje: [[Predavanje 5\|Predavanje 5]]
