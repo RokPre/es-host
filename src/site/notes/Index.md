@@ -7,19 +7,23 @@ To so moji zapiski za predmet [Električni stroji](https://fe.uni-lj.si/predmeti
 
 # Predavanja
 
-| predavanje        | tema                                            |
-| ----------------- | ----------------------------------------------- |
-| [[Predavanje 0\|Predavanje 0]]  | Uvod                                            |
-| [[Predavanje 1\|Predavanje 1]]  | Magnetni krog                                   |
-| [[Predavanje 2\|Predavanje 2]]  | Transformatorji                                 |
-| [[Predavanje 3\|Predavanje 3]]  | Nadomestno vezje transformatorja                |
-| [[Predavanje 4\|Predavanje 4]]  | Izgube                   | 
-| [[Predavanje 5\|predavanje 5]]  | Vklopni pojav transformatorja                   |
-| [[Predavanje 6\|predavanje 6]]  | Trifazni transformator                          |
-| [[Predavanje 7\|predavanje 7]]  | Enofazna obremenitev trifaznega transformatorja |
-| [[predavanje 8\|predavanje 8]]  | Sinhronski stroji                               |
-| [[predavanje 9\|predavanje 9]]  | Obratovanje sinhronskega stroja                 |
-| [[Predavanje 10\|Predavanje 10]] | Reakcija indukta                                |
+| predavanje        | tema                                                  | Complete |
+| ----------------- | ----------------------------------------------------- |:--------:|
+| [[Predavanje 1\|Predavanje 1]]  | Uvod, Magnetni krog                                   |    ✅    |
+| [[Predavanje 2\|Predavanje 2]]  | Izmenični magnetni krog                               |    ✅    |
+| [[Predavanje 3\|Predavanje 3]]  | Transformator in njegovo nadomestno vezje             |    ✅    |
+| [[Predavanje 4\|Predavanje 4]]  | Izgube v transformatorju                              |    ✅    |
+| [[Predavanje 5\|predavanje 5]]  | Kazalčni diagra, Kappov trikotnik                     |    ✅    |
+| [[Predavanje 6\|predavanje 6]]  | Vklopni pojav transformatorja, trifazni transformator |    ✅    |
+| [[Predavanje 7\|predavanje 7]]  | Enofazna obremenitev trifaznega transformatorja       |          |
+| [[predavanje 8\|predavanje 8]]  | Sinhronski stroji                                     |          |
+| [[predavanje 9\|predavanje 9]]  | Obratovanje sinhronskega stroja                       |          |
+| [[Predavanje 10\|Predavanje 10]] | Reakcija indukta                                      |          |
+| [[Predavanje 11\|Predavanje 11]] |                                                       |          | 
+| [[Predavanje 12\|Predavanje 12]] |                                                       |          |
+| [[Predavanje 13\|Predavanje 13]] |                                                       |          |
+| [[Predavanje 14\|Predavanje 14]] |                                                       |          |
+| [[Predavanje 15\|Predavanje 15]] |                                                       |          |
 
 # Oznake in barve
 Ker je veliko grafov in skic bo večino časa veljalo, da so določenen veličine narisane z določeno barvo.
