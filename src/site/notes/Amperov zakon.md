@@ -22,3 +22,4 @@ kjer je $d \vec{l}$ neskončno majhen korak, ki ga naredimo na poti po sklenjeni
 ![[sync/elektricniStroji/Excalidraw/Amerov zakon 2024-11-02 10.37.52.excalidraw.svg\|sync/elektricniStroji/Excalidraw/Amerov zakon 2024-11-02 10.37.52.excalidraw.svg]]
 
 [^2]: [Ampere's circuital law](https://www.bing.com/videos/riverview/relatedvideo?q=ampers+law&mid=11534E4CD0EFA756068B11534E4CD0EFA756068B&FORM=VIRE)
+TODO:
