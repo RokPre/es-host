@@ -14,7 +14,7 @@ body {
         width: 100% !important;
         height: 100% !important;
     }
-    .theme-dark svg[width *= "darkinvert"] {
+    .theme-dark svg.excalidraw-svg{
         filter: invert(100%);
         mix-blend-mode: screen;
     }
