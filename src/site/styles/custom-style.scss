@@ -14,4 +14,8 @@ body {
         width: 100% !important;
         height: 100% !important;
     }
+    .theme-dark svg[width *= "darkinvert"] {
+        filter: invert(100%);
+        mix-blend-mode: screen;
+    }
 }
