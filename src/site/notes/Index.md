@@ -15,11 +15,11 @@ To so moji zapiski za predmet [Električni stroji](https://fe.uni-lj.si/predmeti
 | [[Predavanje 4\|Predavanje 4]]  | Izgube v transformatorju                              |    ✅    |
 | [[Predavanje 5\|predavanje 5]]  | Kazalčni diagra, Kappov trikotnik                     |    ✅    |
 | [[Predavanje 6\|predavanje 6]]  | Vklopni pojav transformatorja, trifazni transformator |    ✅    |
-| [[Predavanje 7\|predavanje 7]]  | Enofazna obremenitev trifaznega transformatorja       |          |
+| [[Predavanje 7\|predavanje 7]]  | Vezalne skupine, enofazna obremenitev trifaznega transformatorja       |    ✅    | 
 | [[Predavanje 8\|predavanje 8]]  | Sinhronski stroji                                     |          |
 | [[predavanje 9\|predavanje 9]]  | Obratovanje sinhronskega stroja                       |          |
 | [[Predavanje 10\|Predavanje 10]] | Reakcija indukta                                      |          |
-| [[Predavanje 11\|Predavanje 11]] |                                                       |          | 
+| [[Predavanje 11\|Predavanje 11]] |                                                       |          |
 | [[Predavanje 12\|Predavanje 12]] |                                                       |          |
 | [[Predavanje 13\|Predavanje 13]] |                                                       |          |
 | [[Predavanje 14\|Predavanje 14]] |                                                       |          |
