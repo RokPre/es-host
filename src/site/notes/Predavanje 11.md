@@ -103,7 +103,7 @@ $$
 $$
 
 ## Merjenje izkoristka generatorja
-
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1287 823" width="1287" height="823" class="excalidraw-svg">  <!-- svg-source:excalidraw -->    <defs>    <style class="style-fonts">          </style>      </defs>  <g stroke-linecap="round" transform="translate(10 10) rotate(0 633.5 401.5)"><path d="M32 0 C328.2 0, 624.41 0, 1235 0 M32 0 C361.87 0, 691.74 0, 1235 0 M1235 0 C1256.33 0, 1267 10.67, 1267 32 M1235 0 C1256.33 0, 1267 10.67, 1267 32 M1267 32 C1267 294.57, 1267 557.14, 1267 771 M1267 32 C1267 213.2, 1267 394.41, 1267 771 M1267 771 C1267 792.33, 1256.33 803, 1235 803 M1267 771 C1267 792.33, 1256.33 803, 1235 803 M1235 803 C787.93 803, 340.86 803, 32 803 M1235 803 C893.29 803, 551.59 803, 32 803 M32 803 C10.67 803, 0 792.33, 0 771 M32 803 C10.67 803, 0 792.33, 0 771 M0 771 C0 518.29, 0 265.59, 0 32 M0 771 C0 518.28, 0 265.56, 0 32 M0 32 C0 10.67, 10.67 0, 32 0 M0 32 C0 10.67, 10.67 0, 32 0" stroke="#1e1e1e" stroke-width="4" fill="none"></path></g></svg>
 
 
 
