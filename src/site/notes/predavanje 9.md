@@ -103,6 +103,8 @@ Vsi ovoji na statorju so vezani v serijo.
 Reaktanca $X_{a}$ ponazarja na statorski napetostni strani vpliv amgnettnega statorskega toka, oz. reakcijo indukta. Na podlagi tega dejstva alhko narišemo novo nadomestno vezej
 
 # Prosti tek
+Prosti tek sinhronskega stroja pomeni, da zunanja turbina vrti gred na kateri je rotor, in na tem rotorju je vzbujanje. 
+
 # Kazalčni diagram 
 Kazalčni diagram za obremenitev R-L značaja ($\varphi$) in reakcijo indukta ($X_{a}$). Ker so vse tri faze simetrične, bomo risali samo eneo izmed teh. 
 
