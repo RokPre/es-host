@@ -47,4 +47,3 @@ Za dodatne infomacije in drugačno razlago obstajajo še drugi viri.
 [Štromar](https://stromar.si/zapiski/uni-zapiski/uni-2-letnik/)
 [Mit](https://ocw.mit.edu/courses/6-061-introduction-to-electric-power-systems-spring-2011/pages/readings/)
 
-
