@@ -18,9 +18,9 @@ To so moji zapiski za predmet [Električni stroji](https://fe.uni-lj.si/predmeti
 | [[Predavanje 7\|predavanje 7]]  | Vezalne skupine, enofazna obremenitev trifaznega transformatorja |   1️⃣    |
 | [[Predavanje 8\|predavanje 8]]  | Sinhronski stroji                                                |   1️⃣    |
 | [[predavanje 9\|predavanje 9]]  | Obratovanje sinhronskega stroja                                  |   1️⃣    |
-| [[Predavanje 10\|Predavanje 10]] | Reakcija indukta                                                 |   1️⃣    |
-| [[Predavanje 11\|Predavanje 11]] |                                                                  |   1️⃣    |
-| [[Predavanje 12\|Predavanje 12]] |                                                                  |   1️⃣    |
+| [[Predavanje 10\|Predavanje 10]] | Reakcija indukta                                                 |          | 
+| [[Predavanje 11\|Predavanje 11]] |                                                                  |          |
+| [[Predavanje 12\|Predavanje 12]] |                                                                  |          |
 | [[Predavanje 13\|Predavanje 13]] |                                                                  |          |
 | [[Predavanje 14\|Predavanje 14]] |                                                                  |          |
 | [[Predavanje 15\|Predavanje 15]] |                                                                  |          |
@@ -46,4 +46,6 @@ Za dodatne infomacije in drugačno razlago obstajajo še drugi viri.
 [eELEplus](http://eele.fe.uni-lj.si/wiki/index.php/Glavna_stran)
 [Štromar](https://stromar.si/zapiski/uni-zapiski/uni-2-letnik/)
 [Mit](https://ocw.mit.edu/courses/6-061-introduction-to-electric-power-systems-spring-2011/pages/readings/)
+[Naloge iz sinhronskih strojev](https://stromar.si/assets/Uploads/11/File1.pdf)
+[Asinhrosnki generator](https://mladiraziskovalci.scv.si/ogled?id=1668)
 
