@@ -7,23 +7,23 @@ To so moji zapiski za predmet [Električni stroji](https://fe.uni-lj.si/predmeti
 
 # Predavanja
 
-| predavanje        | tema                                                             | Complete |
-| ----------------- | ---------------------------------------------------------------- |:--------:|
-| [[Predavanje 1\|Predavanje 1]]  | Uvod, Magnetni krog                                              |   1️⃣    |
-| [[Predavanje 2\|Predavanje 2]]  | Izmenični magnetni krog                                          |   1️⃣    |
-| [[Predavanje 3\|Predavanje 3]]  | Transformator in njegovo nadomestno vezje                        |   1️⃣    |
-| [[Predavanje 4\|Predavanje 4]]  | Izgube v transformatorju                                         |   1️⃣    |
-| [[Predavanje 5\|predavanje 5]]  | Kazalčni diagra, Kappov trikotnik                                |   1️⃣    |
-| [[Predavanje 6\|predavanje 6]]  | Vklopni pojav transformatorja, trifazni transformator            |   1️⃣    |
-| [[Predavanje 7\|predavanje 7]]  | Vezalne skupine, enofazna obremenitev trifaznega transformatorja |   1️⃣    |
-| [[Predavanje 8\|predavanje 8]]  | Sinhronski stroji                                                |   1️⃣    |
-| [[predavanje 9\|predavanje 9]]  | Obratovanje sinhronskega stroja                                  |   1️⃣    |
-| [[Predavanje 10\|Predavanje 10]] | Reakcija indukta                                                 |   1️⃣    | 
-| [[Predavanje 11\|Predavanje 11]] |                                                                  |          |
-| [[Predavanje 12\|Predavanje 12]] |                                                                  |          |
-| [[Predavanje 13\|Predavanje 13]] |                                                                  |          |
-| [[Predavanje 14\|Predavanje 14]] |                                                                  |          |
-| [[Predavanje 15\|Predavanje 15]] |                                                                  |          |
+| predavanje        | tema                                                                                   | Complete |
+| ----------------- | -------------------------------------------------------------------------------------- |:--------:|
+| [[Predavanje 1\|Predavanje 1]]  | Vrste in zgradba strojev, magnetno polje in delovanje, magnetni krog kot vezje.        |   1️⃣    |
+| [[Predavanje 2\|Predavanje 2]]  | Magnetni tok, inducirana napetost, izmenični tok                                       |   1️⃣    |
+| [[Predavanje 3\|Predavanje 3]]  | Transformator in njegovo nadomestno vezje                                              |   1️⃣    |
+| [[Predavanje 4\|Predavanje 4]]  | Histerezne izgube, vrtinčne izgube, konstrukcija transformatorja in zmanjševanje izgub |   1️⃣    | 
+| [[Predavanje 5\|predavanje 5]]  |                                                                                        |   1️⃣    |
+| [[Predavanje 6\|predavanje 6]]  |                                                                                        |   1️⃣    |
+| [[Predavanje 7\|predavanje 7]]  |                                                                                        |   1️⃣    |
+| [[Predavanje 8\|predavanje 8]]  |                                                                                        |   1️⃣    |
+| [[predavanje 9\|predavanje 9]]  |                                                                                        |   1️⃣    |
+| [[Predavanje 10\|Predavanje 10]] |                                                                                        |   1️⃣    |
+| [[Predavanje 11\|Predavanje 11]] |                                                                                        |          |
+| [[Predavanje 12\|Predavanje 12]] |                                                                                        |          |
+| [[Predavanje 13\|Predavanje 13]] |                                                                                        |          |
+| [[Predavanje 14\|Predavanje 14]] |                                                                                        |          |
+| [[Predavanje 15\|Predavanje 15]] |                                                                                        |          |
 
 # Oznake in barve
 Ker je veliko grafov in skic bo večino časa veljalo, da so določenen veličine narisane z določeno barvo.
