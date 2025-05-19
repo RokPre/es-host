@@ -18,7 +18,7 @@ To so moji zapiski za predmet [Električni stroji](https://fe.uni-lj.si/predmeti
 | [[Predavanje 7\|predavanje 7]]  | Vezalne skupine, enofazna obremenitev trifaznega transformatorja |   1️⃣    |
 | [[Predavanje 8\|predavanje 8]]  | Sinhronski stroji                                                |   1️⃣    |
 | [[predavanje 9\|predavanje 9]]  | Obratovanje sinhronskega stroja                                  |   1️⃣    |
-| [[Predavanje 10\|Predavanje 10]] | Reakcija indukta                                                 |          | 
+| [[Predavanje 10\|Predavanje 10]] | Reakcija indukta                                                 |   1️⃣    | 
 | [[Predavanje 11\|Predavanje 11]] |                                                                  |          |
 | [[Predavanje 12\|Predavanje 12]] |                                                                  |          |
 | [[Predavanje 13\|Predavanje 13]] |                                                                  |          |
