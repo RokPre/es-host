@@ -118,7 +118,7 @@ Generatorji imajo običajno regulator napetosti (AVR), ki pomaga vzdrževati sta
 
 # dq-osna teorija
 
-Osnovna ideja $\alpha\beta$ in $dq$ teorij je, da trofazni sistem pretvorimo v sistem z dvema komponentama. Tako sistem postane bolj razumljiv in enostavnejši za regulacijo. Vse temelji na tem, da tokove iz faz $A$, $B$, $C$ predstavimo v drugačni koordinatni osnovi.
+Osnovna ideja $\alpha\beta$ in $dq$ teorij je, da trofazni sistem pretvorimo v sistem z dvema komponentama. Tako sistem postane bolj razumljiv in enostavnejši za regulacijo. Vse temelji na tem, da tokove iz faz $A$, $B$, $C$ predstavimo v drugačni koordinatni osnovi.[^1]
 
 Prvi korak je pretvorba iz $ABC$ sistema v $\alpha\beta$ sistem. Temu pravimo **Clarkeova transformacija**. Če so tokovi simetrični in zamaknjeni za 120°, na primer:
 
