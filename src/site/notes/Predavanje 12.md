@@ -77,6 +77,37 @@ Ta osnovna mehanika je osnova delovanja vseh asinhronskih motorjev in pojasnjuje
 
 
 
+
+# Obremenitev motorja
+
+Obremenitev motorja pomeni, da na njegovo gred priključimo mehanski navor, ki deluje v nasprotni smeri od navora, ki ga generira rotor. Ko motor deluje brez bremena, je zaostanek rotorja za vrtilnim magnetnim poljem statorja zelo majhen. V tem primeru je slip skoraj enak nič, zato se v rotorju inducira zelo majhna napetost, posledično pa tudi tok $I_{rot}$ ostane majhen.
+
+Ko pa na motor priključimo mehansko breme, se rotor začne upočasnjevati. Posledično se poveča slip, kar pomeni večjo razliko med hitrostjo magnetnega polja in hitrostjo rotorja. Ta večja relativna hitrost povzroči višjo inducirano napetost v rotorski zanki in s tem večji tok. Večji tok v rotorju povzroči močnejšo magnetno silo in s tem tudi večji elektromagnetni navor, ki je potreben za uravnoteženje dodatne mehanske obremenitve.
+
+Proces lahko opišemo s sledečo verigo:
+
+$$
+B_{vrt,stat} \rightarrow U_{ind,rot} \rightarrow I_{ind,rot} \underbrace{\rightarrow}_{B_{vrt,stat}} F_{rot} \underbrace{\rightarrow}_{\text{Ročica}} M_{rot}
+$$
+
+Večje mehansko breme povzroči večji zaostanek rotorja, kar vodi do višje inducirane napetosti $U_{ind,rot}$, večjega rotorskega toka $I_{rot}$ in večjega navora. Ker mora biti med statorjem in rotorjem ohranjena elektromagnetna zveza, velja:
+
+$$
+N_{R} I_{R} = N_{S} I_{S}
+$$
+
+To pomeni, da se ob povečanju rotorskega toka $I_{R}$ poveča tudi tok v statorju $I_{S}$. Z vidika napajalnega omrežja se z naraščanjem mehanske obremenitve poveča tok, ki ga stroj črpa, čeprav napetost ostaja konstantna. Zato se navidezna impedanca stroja zmanjša. Sklepamo torej, da je impedanca asinhronskega motorja odvisna od hitrosti vrtenja oziroma od velikosti mehanske obremenitve.
+
+To razmerje lahko povzamemo z verigo:
+
+$$
+P_{gred,bre} \uparrow \ \Rightarrow \ n \downarrow \ \Rightarrow \ U_{ind,rot} \uparrow \ \Rightarrow \ I_{rot} \uparrow \ \Rightarrow \ I_{stat} \uparrow
+$$
+
+Tako lahko spremembe v obremenitvi motorično interpretiramo tudi z energijskega vidika: če motor začne oddajati več mehanske moči zaradi bremena, mora to dodatno moč dobiti iz napajalnega vira. Ker je napetost omrežja konstantna, se mora povečati tok statorja, da zagotovi potrebno električno energijo, ki se nato pretvori v mehansko delo.
+
+
+
 # Kratkostična kletka
 
 Prevodno zanko, ki je osnova za delovanje rotorja v asinhronskem stroju, lahko izvedemo na več načinov. Ena možnost je klasično navitje iz bakrene žice z več ovoji, druga pa mnogo bolj razširjena in robustna rešitev – kratkostična kletka.
@@ -90,9 +121,58 @@ Ko se rotor vrti z zdrsom glede na magnetno polje statorja, se v teh zankah indu
 
 Konstrukcija kratkostične kletke je preprosta, poceni, mehansko trdna in odporna na obrabo. Ker ni ščetk in drsnih kontaktov, je skoraj ni potrebno vzdrževati, zato je idealna za industrijske motorje, kjer sta zanesljivost in robustnost ključna.
 
+Ker smo skupaj zvzali palice z obraočom tekožko rečemo koliko je faz. Čeprav ima klettka n palic, bomo rekli, da v dvo faznem stroju ima dve fazi. V trofaznem pa tri.
 
 # Inducirana napetost v asinhronskem stroju
-# Velikost in frekvenca rotorske inducirane naetosti
+Inducirana napetost se izračuna tako kot v ostalih strojih, preko [[Predavanje 2#Magična formula P2\|magične formule]].
+
+$$
+E_{f,s} = 4,44 \cdot N_{fs} \cdot K_{ns} \cdot f_{s} \cdot B \cdot A_{s}
+$$
+kjer je:
+- $E_{fs}$ inducirana fiktivna napetost na statorju,
+- $N_{fs}$ število ovojev navitja na statorju,
+- $K_{ns}$ je koeficient navitja,
+- $f_{s}$ je frekvenca električnih veličin na statorju,
+- $B$ magnetno polje,
+- $A$ površina zanke.
+
+Inducirana napetost na rotorju se izračuna skoraj enako:
+$$
+E_{f,r} = 4,44 \cdot N_{fr} \cdot K_{nr} \cdot f_{r} \cdot B \cdot A_{r}
+$$
+
+Frekvenca na rotorju je odvisna od slipa. Večji kot je slip višja bo frekvenca.
+
+# Obremenitev motorja
+Obremenitev motorja pomeni, da na njegovo gred priključimo mehanski navor, ki deluje v nasprotni smeri od elektromagnetnega navora, ki ga generira rotor. Ko motor deluje brez bremena, je slip zelo majhen, saj rotor skoraj dohiteva vrtilno magnetno polje statorja. Posledično je relativno gibanje med rotorjem in poljem zanemarljivo, zato se v rotorskem vodniku inducira le šibka napetost, kar pomeni, da je tudi rotorski tok $I_{rot}$ majhen.
+
+Ko motor obremenimo, začne rotor zaostajati za vrtečim magnetnim poljem statorja. Zaradi večjega relativnega gibanja se poveča slip, kar pomeni večjo razliko med sinhronsko hitrostjo magnetnega polja in dejansko hitrostjo rotorja. Posledica tega je višja inducirana napetost v rotorju, večji rotorski tok in s tem tudi večja Lorentzova sila. Ta ustvari večji elektromagnetni navor, potreben za uravnoteženje zunanjega mehanskega bremena.
+
+Celoten proces lahko zapišemo kot naslednjo logično verigo:
+
+$$
+B_{vrt,stat} \rightarrow U_{ind,rot} \rightarrow I_{ind,rot} \underbrace{\rightarrow}_{B_{vrt,stat}} F_{rot} \underbrace{\rightarrow}_{\text{Ročica}} M_{rot}
+$$
+
+S povečanjem bremena se poveča slip, s tem tudi inducirana napetost $U_{ind,rot}$, tok v rotorju $I_{rot}$ in posledično tudi elektromagnetni navor. Ker je rotor elektromagnetno sklopljen s statorjem, velja zveza:
+
+$$
+N_{R} I_{R} = N_{S} I_{S}
+$$
+
+kjer $N_R$ in $N_S$ predstavljata število ovojev na rotorju in statorju, $I_R$ in $I_S$ pa tokove v rotorju in statorju. Ta zveza pomeni, da se ob povečanem toku v rotorju poveča tudi tok v statorju. Z vidika omrežja se tako zdi, kot da se je zmanjšala impedanca stroja, saj je napetost konstantna, tok pa narašča. Iz tega sklepamo, da je navidezna impedanca asinhronskega motorja odvisna od hitrosti vrtenja oziroma velikosti mehanske obremenitve.
+
+To lahko povzamemo v obliki verižnega zapisa:
+
+$$
+P_{gred,bre} \uparrow \ \Rightarrow \ n \downarrow \ \Rightarrow \ U_{ind,rot} \uparrow \ \Rightarrow \ I_{rot} \uparrow \ \Rightarrow \ I_{stat} \uparrow
+$$
+
+Z energijskega vidika lahko rečemo, da ko motor začne oddajati več mehanske moči zaradi večjega bremena, mora to moč dobiti iz električnega omrežja. Ker napajalna napetost ostaja konstantna, se poveča tok v statorju, da zadosti dodatnemu energetskemu povpraševanju. Tako asinhronski motor naravno prilagaja svoj tokovni zajem glede na obremenitev, brez potrebe po zunanji regulaciji.
+
+
+
 ___
 Naslednje poglavje: [[Predavanje 13\|Predavanje 13]]
 Prejšnje predavanje: [[Predavanje 11\|Predavanje 11]]

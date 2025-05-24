@@ -19,8 +19,8 @@ To so moji zapiski za predmet [Električni stroji](https://fe.uni-lj.si/predmeti
 | [[Predavanje 8\|predavanje 8]]  |                                                                                        |   1️⃣    |
 | [[predavanje 9\|predavanje 9]]  |                                                                                        |   1️⃣    |
 | [[Predavanje 10\|Predavanje 10]] |                                                                                        |   1️⃣    |
-| [[Predavanje 11\|Predavanje 11]] |                                                                                        |   1️⃣    | 
-| [[Predavanje 12\|Predavanje 12]] |                                                                                        |          |
+| [[Predavanje 11\|Predavanje 11]] |                                                                                        |   1️⃣    |
+| [[Predavanje 12\|Predavanje 12]] |                                                                                        |   1️⃣    | 
 | [[Predavanje 13\|Predavanje 13]] |                                                                                        |          |
 | [[Predavanje 14\|Predavanje 14]] |                                                                                        |          |
 | [[Predavanje 15\|Predavanje 15]] |                                                                                        |          |
