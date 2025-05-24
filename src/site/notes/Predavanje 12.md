@@ -124,25 +124,47 @@ Konstrukcija kratkostične kletke je preprosta, poceni, mehansko trdna in odporn
 Ker smo skupaj zvzali palice z obraočom tekožko rečemo koliko je faz. Čeprav ima klettka n palic, bomo rekli, da v dvo faznem stroju ima dve fazi. V trofaznem pa tri.
 
 # Inducirana napetost v asinhronskem stroju
-Inducirana napetost se izračuna tako kot v ostalih strojih, preko [[Predavanje 2#Magična formula P2\|magične formule]].
+
+Inducirana napetost v asinhronskem stroju se izračuna po enakem principu kot v drugih električnih strojih, s pomočjo tako imenovane "magične formule", ki temelji na Faradayevem zakonu elektromagnetne indukcije:
 
 $$
-E_{f,s} = 4,44 \cdot N_{fs} \cdot K_{ns} \cdot f_{s} \cdot B \cdot A_{s}
+E_{f,s} = 4{,}44 \cdot N_{fs} \cdot K_{ns} \cdot f_{s} \cdot B \cdot A_{s}
 $$
+
 kjer je:
-- $E_{fs}$ inducirana fiktivna napetost na statorju,
+
+- $E_{f,s}$ inducirana (fiktivna) napetost na statorski fazi,
 - $N_{fs}$ število ovojev navitja na statorju,
-- $K_{ns}$ je koeficient navitja,
-- $f_{s}$ je frekvenca električnih veličin na statorju,
-- $B$ magnetno polje,
-- $A$ površina zanke.
+- $K_{ns}$ koeficient navitja (upošteva porazdelitev in konfiguracijo navitja),
+- $f_{s}$ frekvenca napajalne napetosti,
+- $B$ amplituda magnetne gostote v zračnem reži,
+- $A_{s}$ efektivna površina ene zanke navitja statorja.
 
-Inducirana napetost na rotorju se izračuna skoraj enako:
+Ta izraz velja za statorsko stran, ki je priključena na električno omrežje in kjer frekvenca ostaja konstantna (npr. 50 Hz).
+
+Inducirana napetost na rotorju se izračuna na enak način, vendar je frekvenca, s katero "vidi" rotor vrtilno polje statorja, odvisna od slip faktorja $s$:
+
 $$
-E_{f,r} = 4,44 \cdot N_{fr} \cdot K_{nr} \cdot f_{r} \cdot B \cdot A_{r}
+f_r = s \cdot f_s
 $$
 
-Frekvenca na rotorju je odvisna od slipa. Večji kot je slip višja bo frekvenca.
+in zato inducirana napetost na rotorju postane:
+
+$$
+E_{f,r} = 4{,}44 \cdot N_{fr} \cdot K_{nr} \cdot f_{r} \cdot B \cdot A_{r} = 4{,}44 \cdot N_{fr} \cdot K_{nr} \cdot s f_{s} \cdot B \cdot A_{r}
+$$
+
+kjer je:
+
+- $E_{f,r}$ inducirana napetost v rotorju,
+- $N_{fr}$ število ovojev v rotorskem navitju (pri kletkastem rotorju ustrezno ekvivalentno število vodnikov),
+- $K_{nr}$ koeficient rotorskega navitja,
+- $f_{r}$ frekvenca rotorja,
+- $A_{r}$ površina rotorske zanke.
+
+Ključno je torej, da je inducirana napetost v rotorju premo sorazmerna s slipom. Ko rotor ni obremenjen in se vrti skoraj s sinhronsko hitrostjo ($s \approx 0$), je inducirana napetost zelo nizka. Ko pa rotor obremenimo in se slip poveča, se sorazmerno poveča tudi inducirana napetost v rotorskem navitju.
+
+
 
 # Obremenitev motorja
 Obremenitev motorja pomeni, da na njegovo gred priključimo mehanski navor, ki deluje v nasprotni smeri od elektromagnetnega navora, ki ga generira rotor. Ko motor deluje brez bremena, je slip zelo majhen, saj rotor skoraj dohiteva vrtilno magnetno polje statorja. Posledično je relativno gibanje med rotorjem in poljem zanemarljivo, zato se v rotorskem vodniku inducira le šibka napetost, kar pomeni, da je tudi rotorski tok $I_{rot}$ majhen.
