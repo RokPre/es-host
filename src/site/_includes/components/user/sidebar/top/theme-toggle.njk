@@ -1,6 +1,16 @@
 <!-- Toggle button -->
 <button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
 
+<style>
+  #theme-toggle {
+    margin: 10px;
+    border: none;
+    color: var(--link-color);
+    box-shadow: none;
+    background-color: var(--background-primary);
+  }
+</style>
+
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const theme = localStorage.getItem("theme");
