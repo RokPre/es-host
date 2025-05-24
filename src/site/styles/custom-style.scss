@@ -18,4 +18,14 @@ body {
         filter: invert(100%);
         mix-blend-mode: screen;
     }
+    /*~~~< Image invert ![[picture.png|invert]] >~~~*/
+    .theme-dark img[alt *= "darkinvert"] {
+        filter: invert(100%);
+        mix-blend-mode: screen;
+    }
+
+    .theme-light img[alt *= "lightinvert"] {
+        filter: invert(100%);
+        mix-blend-mode: screen;
+    }
 }
