@@ -19,7 +19,7 @@ body {
         mix-blend-mode: screen;
     }
     /*~~~< Image invert for dark theme>~~~*/
-    body.theme-dark svg {
+    body.theme-dark svg.excalidraw-svg {
         filter: invert(100%) hue-rotate(180deg);
     }
 }
