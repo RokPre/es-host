@@ -12,14 +12,14 @@ To so moji zapiski za predmet [Električni stroji](https://fe.uni-lj.si/predmeti
 | [[Predavanje 1\|Predavanje 1]]  | Vrste in zgradba strojev, magnetno polje in delovanje, magnetni krog kot vezje.        |   1️⃣    |
 | [[Predavanje 2\|Predavanje 2]]  | Magnetni tok, inducirana napetost, izmenični tok                                       |   1️⃣    |
 | [[Predavanje 3\|Predavanje 3]]  | Transformator in njegovo nadomestno vezje                                              |   1️⃣    |
-| [[Predavanje 4\|Predavanje 4]]  | Histerezne izgube, vrtinčne izgube, konstrukcija transformatorja in zmanjševanje izgub |   1️⃣    | 
+| [[Predavanje 4\|Predavanje 4]]  | Histerezne izgube, vrtinčne izgube, konstrukcija transformatorja in zmanjševanje izgub |   1️⃣    |
 | [[Predavanje 5\|predavanje 5]]  |                                                                                        |   1️⃣    |
 | [[Predavanje 6\|predavanje 6]]  |                                                                                        |   1️⃣    |
 | [[Predavanje 7\|predavanje 7]]  |                                                                                        |   1️⃣    |
 | [[Predavanje 8\|predavanje 8]]  |                                                                                        |   1️⃣    |
 | [[predavanje 9\|predavanje 9]]  |                                                                                        |   1️⃣    |
 | [[Predavanje 10\|Predavanje 10]] |                                                                                        |   1️⃣    |
-| [[Predavanje 11\|Predavanje 11]] |                                                                                        |          |
+| [[Predavanje 11\|Predavanje 11]] |                                                                                        |   1️⃣    | 
 | [[Predavanje 12\|Predavanje 12]] |                                                                                        |          |
 | [[Predavanje 13\|Predavanje 13]] |                                                                                        |          |
 | [[Predavanje 14\|Predavanje 14]] |                                                                                        |          |
