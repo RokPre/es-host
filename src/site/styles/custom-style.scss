@@ -18,13 +18,8 @@ body {
         filter: invert(100%);
         mix-blend-mode: screen;
     }
-    /*~~~< Image invert ![[picture.png|invert]] >~~~*/
-    .theme-dark svg[alt *= "darkinvert"] {
-        filter: invert(100%);
-        mix-blend-mode: screen;
-    }
-
-    .theme-light svg[alt *= "lightinvert"] {
+    /*~~~< Image invert for dark theme>~~~*/
+    .theme-dark svg {
         filter: invert(100%);
         mix-blend-mode: screen;
     }
