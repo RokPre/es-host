@@ -19,8 +19,7 @@ body {
         mix-blend-mode: screen;
     }
     /*~~~< Image invert for dark theme>~~~*/
-    .theme-dark svg {
-        filter: invert(100%);
-        mix-blend-mode: screen;
+    body.theme-dark svg {
+        filter: invert(100%) hue-rotate(180deg);
     }
 }
