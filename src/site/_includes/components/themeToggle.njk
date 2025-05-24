@@ -1,0 +1,38 @@
+<!-- HTML toggle button (you can embed this in a custom footer or header) -->
+<button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+<script>
+  // Load theme from localStorage
+  document.addEventListener("DOMContentLoaded", () => {
+    const theme = localStorage.getItem("theme");
+    if (theme) {
+      document.body.classList.remove("theme-dark", "theme-light");
+      document.body.classList.add(theme);
+    }
+  });
+
+  function toggleTheme() {
+    const currentTheme = document.body.classList.contains("theme-dark") ? "theme-dark" : "theme-light";
+    const newTheme = currentTheme === "theme-dark" ? "theme-light" : "theme-dark";
+    document.body.classList.remove("theme-dark", "theme-light");
+    document.body.classList.add(newTheme);
+    localStorage.setItem("theme", newTheme);
+  }
+</script>
+
+<style>
+  body.theme-light {
+    --bg: #ffffff;
+    --fg: #000000;
+  }
+
+  body.theme-dark {
+    --bg: #121212;
+    --fg: #e0e0e0;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+  }
+</style>
