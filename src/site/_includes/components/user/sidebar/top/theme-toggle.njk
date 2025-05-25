@@ -8,6 +8,15 @@
     color: var(--link-color);
     box-shadow: none;
     background-color: var(--background-primary);
+    border-left: solid 1px;
+    border-radius: 0px;
+    font-size: 1rem;
+  }
+
+  #theme-toggle::before {
+    content: attr(data-theme-icon);
+    margin-right: 6px;
+    content: "🌙";
   }
 
   #theme-toggle:hover {
@@ -25,11 +34,20 @@
     }
   });
 
-  function toggleTheme() {
-    const currentTheme = document.body.classList.contains("theme-dark") ? "theme-dark" : "theme-light";
-    const newTheme = currentTheme === "theme-dark" ? "theme-light" : "theme-dark";
-    document.body.classList.remove("theme-dark", "theme-light");
-    document.body.classList.add(newTheme);
-    localStorage.setItem("theme", newTheme);
+function toggleTheme() {
+  const currentTheme = document.body.classList.contains("theme-dark") ? "theme-dark" : "theme-light";
+  const newTheme = currentTheme === "theme-dark" ? "theme-light" : "theme-dark";
+
+  document.body.classList.remove("theme-dark", "theme-light");
+  document.body.classList.add(newTheme);
+  localStorage.setItem("theme", newTheme);
+
+  // Update icon on button
+  const button = document.getElementById("theme-toggle");
+  if (button) {
+    const icon = newTheme === "theme-dark" ? "🌙" : "☀️";
+    button.setAttribute("data-theme-icon", icon);
   }
+}
+
 </script>
