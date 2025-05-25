@@ -18,6 +18,9 @@ body {
         filter: invert(100%);
         mix-blend-mode: screen;
     }
+    mjx-container > svg {
+        max-width: 100%;
+    }
 }
 
 /*~~~< Image invert for dark theme>~~~*/
