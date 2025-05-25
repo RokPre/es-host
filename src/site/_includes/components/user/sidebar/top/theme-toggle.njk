@@ -11,17 +11,20 @@
     border-left: solid 1px;
     border-radius: 0px;
     font-size: 1rem;
+    justify-content: left;
   }
 
   #theme-toggle::before {
     content: "🌙";
     content: attr(data-theme-icon);
     margin-right: 6px;
+    text-decoration: none !important;
   }
 
   #theme-toggle:hover {
     color: var(--link-color-hover);
     background-color: var(--background-secondary);
+    text-decoration: underline;
   }
 </style>
 
