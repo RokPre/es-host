@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (theme) {
       document.body.classList.remove("theme-dark", "theme-light");
       document.body.classList.add(theme);
+      const button = document.getElementById("theme-toggle");
       if (button) {
         const icon = theme === "theme-dark" ? "🌙" : "☀️";
         button.setAttribute("data-theme-icon", icon);
