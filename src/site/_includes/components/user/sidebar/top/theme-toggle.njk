@@ -26,11 +26,15 @@
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const theme = localStorage.getItem("theme");
+document.addEventListener("DOMContentLoaded", () => {
+  const theme = localStorage.getItem("theme");
     if (theme) {
       document.body.classList.remove("theme-dark", "theme-light");
       document.body.classList.add(theme);
+      if (button) {
+        const icon = theme === "theme-dark" ? "🌙" : "☀️";
+        button.setAttribute("data-theme-icon", icon);
+      }
     }
   });
 
