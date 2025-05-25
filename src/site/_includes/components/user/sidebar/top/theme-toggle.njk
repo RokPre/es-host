@@ -2,33 +2,37 @@
 <button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
 
 <style>
-  #theme-toggle {
-    margin: 10px;
-    border: none;
-    color: var(--link-color);
-    box-shadow: none;
-    background-color: var(--background-primary);
-    border-left: solid 1px;
-    border-radius: 0px;
-    font-size: 1rem;
-    justify-content: left;
-  }
+#theme-toggle {
+  margin: 10px;
+  border: none;
+  color: var(--link-color);
+  background-color: var(--background-primary);
+  box-shadow: none;
+  border-left: solid 1px;
+  border-radius: 0px;
+  font-size: 1rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
 
-  #theme-toggle::before {
-    content: "🌙";
-    content: attr(data-theme-icon);
-    margin-right: 6px;
-  }
+#theme-toggle::before {
+  content: attr(data-theme-icon);
+  margin-right: 6px;
+}
 
-  #theme-toggle::hover::before {
-    text-decoration: none!important;
-  }
+#theme-toggle:hover {
+  color: var(--link-color-hover);
+  background-color: var(--background-secondary);
+  text-decoration: underline;
+}
 
-  #theme-toggle:hover {
-    color: var(--link-color-hover);
-    background-color: var(--background-secondary);
-    text-decoration: underline;
-  }
+#theme-toggle:hover::before {
+  text-decoration: none !important;
+}
+
 </style>
 
 <script>
