@@ -8,7 +8,6 @@ Transformator ima izgube v navitju $P_{cu} = 1750\ \text{W}$ in izgube v prostem
 
 Po kolikšnem času mora izklopiti **termična zaščita**, da ne pride do pregrevanja preko dopustne (nazivne) temperature stroja?
 
----
 
 ## Rešitev
 

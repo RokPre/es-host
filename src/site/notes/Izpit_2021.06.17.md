@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/izpit-2021-06-17/","tags":["unfinished"]}
 ---
 
-# Naloga 1E+IReolz 
+# Naloga 1
 
 Trifazni distribucijski transformator ima naslednje nazivne podatke:  
 $S_{n} = 100\ \text{kVA}$ | $U_{1n} = 21\ \text{kV}$ | $U_{2n} = 0.42\ \text{kV}$ | vezava: Yzn5.  
