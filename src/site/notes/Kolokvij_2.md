@@ -182,18 +182,13 @@ Kolikšen je izkoristek transformatorja v tem obratovalnem stanju,
 - nazivno izgubo v jedru: $P_{Fe} = 45\ \mathrm{W}$  
 - nazivno izgubo v navitjih: $P_{Cu} = 98\ \mathrm{W}$
 ## Rešitev
-
 ### 1. Izračun trenutne navidezne moči:
 Ker gre za trifazni transformator:
-
 $$
 S' = \sqrt{3} \cdot U_2 \cdot I_2 = \sqrt{3} \cdot 220{.}4\ \mathrm{V} \cdot 9{.}2\ \mathrm{A} \approx 3511\ \mathrm{VA}
 $$
 
 (če uporabiš enofazno oceno $U \cdot I = 2027\ \mathrm{VA}$, to velja le za eno fazo — a za boljši približek upoštevamo trifazno vrednost)
-
----
-
 ### 2. Prilagoditev izgub v navitju
 
 Ker je trenutni tok večji od nazivnega, se izgube v Cu povečajo sorazmerno s kvadratom toka:
@@ -201,17 +196,10 @@ Ker je trenutni tok večji od nazivnega, se izgube v Cu povečajo sorazmerno s k
 $$
 P_{Cu}' = P_{Cu,n} \cdot \left( \frac{I_2}{I_{2n}} \right)^2 = 98 \cdot \left( \frac{9{.}2}{13{.}1} \right)^2 \approx 48{.}3\ \mathrm{W}
 $$
-
----
-
 ### 3. Skupne izgube:
-
 $$
 P_{\text{izg}}' = P_{Fe} + P_{Cu}' = 45 + 48{.}3 = 93{.}3\ \mathrm{W}
 $$
-
----
-
 ### 4. Izkoristek:
 
 $$
