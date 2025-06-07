@@ -55,7 +55,7 @@ $$
 $$
 
 # Naloga 3
-Sinhronski turbogeneator $S_{n} = 200MVA$, $U_{2n} = 15kV$, $\cos(\varphi_{2n}) = 0.8$, $X_{^{2}} = 1.4$, $I_{1n} = 300A$ obratuje na togem nazivnem omrežju pri obremenizvi $S' = 100MVA$, $\cos(\varphi_{2}')=0.6$. Za to obratovalno stanje določite potreben vzbujalni tok $I_{1}$ in oba kolesna kota $\delta_{n}$ in $\delta'$ (obvezna tudi skica obeh obratovlanih stanj).
+Sinhronski turbogenerator $S_n = 200\ \mathrm{MVA}$, $U_n = 15\ \mathrm{kV}$, $\cos\varphi_{2n} = 0{.}8$, $X_{sr} = 1{.}4$, $I_n = 300\ \mathrm{A}$ obratuje na togem nazivnem omrežju pri obremenitvi $S' = 100\ \mathrm{MVA}$, $\cos\varphi_{2}' = 0{.}6$. Za to obratovalno stanje določite potreben vzbujalni tok $I_1'$ in oba kolesna kota $\delta_n$ in $\delta'$ (obvezna tudi skica obeh obratovalnih stanj).
 
 ## 1. Izračun nazivnega toka $I_{2n}$
 
@@ -97,11 +97,51 @@ $$
 
 # Naloga 4
 Trifazni sinhrnski generator z nazivnimi podatki $S_{n} = 50kVa$, $U_{2n} = 400V$ , $f_{n} = 50Hz$, $\cos(\varphi_{2n}) = 0.8$, $n_{n} = 1000\text{min}^{-1}$ obratuje na nazivnem omrežju in je obremenenjen z močjo $P' = 50kW$. Vzbujanje je nastavljeno na 2-kratno vrednost vzbujanjega toka prostega teka.
-## 1) Kolikšten je statorksi tok v tem obratovlanem stanju generatorja?
-$I_{s} = ?$
+
+## 1) Kolikšen je statorski tok $I_s$ v tem obratovalnem stanju?
+$U' = U_{n}$, $P' = S_{n} = 50kW, \Rightarrow \cos(\varphi_{2}') = 1$, $I_{v}' = 2I_{v,0}$.
+$S' = \sqrt{ 3 } U' I' \Rightarrow I' = \frac{50000}{\sqrt{ 3 } \cdot 400} \approx 72A$
+
+## 2) Kolikšna je relativna vrednost sinhronske reaktance generatorja?
+
+Relativna sinhronska reaktanca:
+
 $$
-\frac{I_{1}'}{I_{n}} = \frac{E_{0}'}{E_{0,n}}
+X_s = \frac{U_{2n}}{I_{2n}} = \frac{400}{72{.}17} \approx 5{.}54\ \Omega
 $$
+
+To je **osnovna vrednost reaktance**, lahko jo vzamemo kot baza za pretvorbo v per unit, če je to smiselno.
+## 3) Koliko polov ima magnetno polje?
 $$
-E_0 = \sqrt{(U_2 + I_2 X_s \cdot \sin\varphi)^2 + (I_2 X_s \cdot \cos\varphi)^2}
+n_n = \frac{f \cdot 60}{p_p} \Rightarrow p_p = \frac{f \cdot 60}{n_n} = \frac{50 \cdot 60}{1000} = 3
+$$
+Število polov:
+$$
+p = 2 \cdot p_p = 6
+$$
+
+# Naloga 5
+Za trigaztni transformator $S_{n} = 50kVA$, $U_{1n} = 20kV$, $U_{2n} = 0.4kV$, $f_{n} = 50Hz$, imamo na voljo rezultate meritve električnih veličin na primarni strani pri preizkusu prostega teka, preizkusu kratkega stika in obremenilnem preizkusu, vendar ni označeno, kateri rezultati so za posamezno obratovalno stanje:
+- Meritev A: $U_{A} = 20.03kV$, $I_{A} = 1.05A$, $\cos(\varphi) = 0.952$
+- Meritev B: $U_{B} = 824.3V$, $I_{B} = 1.38A$, $\cos(\varphi) = 0.375$
+- Meritev C: $U_{C} = 20.04kV$, $I_{C} = 0.012A$, $\cos(\varphi) = 0.186$
+
+Ugotovite in definirajte kateri merilni rezultati ustrezajo posameznemu preizkusu. Določite tudi, kolikšne so nazivne izgube v železu in v navitju transformatorja.
+## Razvrstitev meritev:
+- **Meritev C**:  
+  Visoka napetost, zelo majhen tok → **prosti tek**
+- **Meritev B**:  
+  Nizka napetost, sorazmerno velik tok → **kratek stik**
+- **Meritev A**:  
+  Nazivna napetost, zmeren tok, visok $\cos\varphi$ → **obremenitveni preizkus**
+## Izračun izgub
+### 1. **Izgube v železu** $P_{Fe}$  
+(iz meritve prostega teka = meritev **C**)
+$$
+P_{Fe} = U_C \cdot I_C \cdot \cos\varphi = 20\,040 \cdot 0{.}012 \cdot 0{.}186 \approx \boxed{44{.}7\ \text{W}}
+$$
+### 2. **Izgube v bakru** $P_{Cu}$  
+(iz meritve kratkega stika = meritev **B**)
+$$
+P_{Cu} = U_B \cdot I_B \cdot \cos\varphi = 824{.}3 \cdot 1{.}38 \cdot 0{.}375 \approx \boxed{426{.}5\ \text{W}}
 $$
