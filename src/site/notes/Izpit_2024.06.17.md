@@ -3,7 +3,6 @@
 ---
 
 # Naloga 1
-
 Transformator ima nazivno moč $S_n = 200\ \text{MVA}$ in nazivni izkoristek $\eta_n = 0{.}98$. Razmerje izgub pri nazivnem obratovalnem stanju je: $\xi_{n} = \frac{P_{Cu,n}}{P_{Fe}} = 3$
 Transformator se pri nazivni napetosti in frekvenci pri trajnem obratovanju segreje do nadtemperature: $\Theta_{\text{max,n}} = 100\ \text{K}$
 
@@ -20,13 +19,9 @@ $$
 Ker je $I = I_n$, ostanejo izgube v bakru **nspremenjene**.
 
 ### 2. Izgube v železu
-Izgube v železu (v jedru) so odvisne od razmerja napetosti in frekvence:
+Izgube v železu (v jedru) so odvisne od razmerja napetosti in frekvence, zato:
 $$
-P_{Fe} \propto \left( \frac{U}{f} \right)^2
-$$
-Zato:
-$$
-\frac{P_{Fe}'}{P_{Fe}} = \left( \frac{0{.}8 U_n}{1{.}2 f_n} \cdot \frac{f_n}{U_n} \right)^2 = \left( \frac{0{.}8}{1{.}2} \right)^2 = \left( \frac{2}{3} \right)^2 = \frac{4}{9}
+\frac{P_{Fe}'}{P_{Fe,n}} = \left(\frac{U'}{U_{n}}\right)^2 \left( \frac{f'}{f_{n}} \right)= \left( \frac{0.8}{1} \right)^{2}\left( \frac{1.2}{1} \right) = 0.768 
 $$
 
 ### 3. Razmerje nadtemperatur
@@ -45,11 +40,11 @@ $$
 Zato:
 
 $$
-\frac{\Theta'}{\Theta_n} = \frac{3 P_{Fe,n} + \frac{4}{9} P_{Fe,n}}{3 P_{Fe,n} + P_{Fe,n}} = \frac{3 + \frac{4}{9}}{4} = \frac{\frac{31}{9}}{4} = \frac{31}{36}
+\frac{\Theta'}{\Theta_n} = \frac{3 P_{Fe,n} + 0.768 P_{Fe,n}}{3 P_{Fe,n} + P_{Fe,n}} = \frac{3 + 0.768}{4} = 0.942
 $$
 ### 4. Izračun nove nadtemperature
 $$
-\Theta' = \Theta_n \cdot \frac{31}{36} = 100\ \text{K} \cdot 0{.}861 \approx 86{.}1\ \text{K}
+\Theta' = 100\ \text{K} \cdot 0{.}942 \approx 94.2\ \text{K}
 $$
 # Naloga 2
 Sinhrosnki turbogenerator $S_{n} = 200MVA$, $U_{2n} = 15kV$, $\cos(\varphi_{2n}) = 0.8$, $X_{sr} = 1.4$, $I_{1n} = 300A$ obratuje na togem nazivnem omrežju pri obremenitivi $S' = 100MVA$, $\cos(\varphi_{2})' = 0.6$. Za to obratovalno stanje določite potrebne vzbujalni tok $I_{1}'$ in oba kolesna kota $\delta_{n}$ in $\delta'$. Obvezna tudi skica obeh obratovlanih stanj.
@@ -127,14 +122,28 @@ $
 \eta = \frac{P_n}{P_{cel}} = \frac{15\,000}{18\,393} \approx 0{.816} = 81{.6}\%
 $
 ### 6. Skupne izgube v statorju
-Skupne izgube so:
+
 $
-P_{izg} = P_{cel} - P_n = 18\,393 - 15\,000 = 3\,393\ \text{W}
+P_{el, n} = P_{vp} + P_{Cu} +P_{fe}
 $
-Ker je del teh izgub trenje in ventilacija ($P_{tr+vent} = 100\ \text{W}$), so izgube v statorju:
 $
-P_{s,cu} + P_{s,fe} = 3\,393 - 100 = 3\,293\ \text{W}
+P_{vp} = \frac{P_{meh}}{1-s} 
 $
+$
+s = \frac{n_{s}-n_{n}}{n_{s}}
+$
+$
+P_{meh } = P_{n} + P_{tr,v}
+$
+$
+P_{el,n} = \frac{P_{n} + P_{tr,v}}{1-\left( \frac{n_{s}-n_{n}}{n_{s}} \right)} + P_{Cu} + P_{Fe} 
+$
+$
+P_{Cu} + P_{Fe} = 18393 - \frac{15000 + 100}{1 - \left( \frac{600-576}{600} \right)} = 2663.833\ldots
+$
+
+
+
 ## b) Kolikšna sta zagonski tok in navor, če motor zaganjamo v vezavi $Y$ pri 25 % nazivni napetosti?
 ### 1. Zagonski tok
 Pri vezavi $\Delta$ je nazivni tok $I_n = 34\ \text{A}$. Zagonski tok pri tej vezavi bi bil:
@@ -176,32 +185,3 @@ $
 # Naloga 4
 Enosmerni motor s tujim vzbujanjem ima nazivne podatke: $P_{n} = 22kW$, $U_{n} = 300V$, $n_{n} = 300\text{min} ^{-1}$, $R_{i} = 0.08\Omega$, $\eta = 0.92$. S kolikšno vtilno hitrostjo moramo poganjati stroj, da na nazivnem omrežju deluje kot generator z obremnitvijo, pri kateri je $I'_{i} = I_{i,n}$? Padec napetosti na ščetkah ni potrebno upoštevati.
 
-## Rešitev
-
-### 1. Nazivni tok:
-
-$$
-I_n = \frac{P_n}{\eta \cdot U_n} = \frac{22\,000}{0{.}92 \cdot 300} \approx 79{.}71\ \text{A}
-$$
-
-### 2. EMN v motorju (nazivno stanje):
-
-$$
-E_n = U_n - I_n \cdot R_i = 300 - 79{.}71 \cdot 0{.}08 \approx 293{.}62\ \text{V}
-$$
-
-### 3. EMN v generatorju (obratovalno stanje):
-
-$$
-E' = U_n + I_n \cdot R_i = 300 + 79{.}71 \cdot 0{.}08 \approx 306{.}38\ \text{V}
-$$
-
-### 4. Razmerje hitrosti:
-
-$$
-\frac{n'}{n_n} = \frac{E'}{E_n} = \frac{306{.}38}{293{.}62} \approx 1{.}0434
-$$
-
-$$
-n' = 300 \cdot 1{.}0434 \approx 313\ \text{min}^{-1}
-$$

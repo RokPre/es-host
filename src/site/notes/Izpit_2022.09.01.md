@@ -197,14 +197,28 @@ $$
 \eta = \frac{P_n}{P_{cel}} = \frac{15\,000}{18\,393} \approx 0{.816} = 81{.6}\%
 $$
 ### 6. Skupne izgube v statorju
-Skupne izgube so:
+
 $$
-P_{izg} = P_{cel} - P_n = 18\,393 - 15\,000 = 3\,393\ \text{W}
+P_{el, n} = P_{vp} + P_{Cu} +P_{fe}
 $$
-Ker je del teh izgub trenje in ventilacija ($P_{tr+vent} = 100\ \text{W}$), so izgube v statorju:
 $$
-P_{s,cu} + P_{s,fe} = 3\,393 - 100 = 3\,293\ \text{W}
+P_{vp} = \frac{P_{meh}}{1-s} 
 $$
+$$
+s = \frac{n_{s}-n_{n}}{n_{s}}
+$$
+$$
+P_{meh } = P_{n} + P_{tr,v}
+$$
+$$
+P_{el,n} = \frac{P_{n} + P_{tr,v}}{1-\left( \frac{n_{s}-n_{n}}{n_{s}} \right)} + P_{Cu} + P_{Fe} 
+$$
+$$
+P_{Cu} + P_{Fe} = 18393 - \frac{15000 + 100}{1 - \left( \frac{600-576}{600} \right)} = 2663.833\ldots
+$$
+
+
+
 ## b) Kolikšna sta zagonski tok in navor, če motor zaganjamo v vezavi $Y$ pri 25 % nazivni napetosti?
 ### 1. Zagonski tok
 Pri vezavi $\Delta$ je nazivni tok $I_n = 34\ \text{A}$. Zagonski tok pri tej vezavi bi bil:

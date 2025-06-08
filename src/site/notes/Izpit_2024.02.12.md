@@ -142,3 +142,46 @@ I_z^Y = I_z^\Delta \cdot \frac{M_z^Y}{M_z^\Delta} = 192 \cdot \frac{133{.}9}{402
 $$
 ### c) Kolikšen je slip motorja v trenutku zagona v vezavi **trikot** in kolikšen v vezavi **zvezda**?
 Slip je 1 saj ob času zagona rotor stoji.
+
+# Naloga 4
+Enosmerni motor s serijskim vzbujanjem ima nazivne podatke: $U_{n} = 400V$, $P_{n} = 10kW$, $n_{n} = 1200\text{min}^{-1}$. Poganja delovni stroj, katerega bremenski navor je neodvisen od vrtilne hitrosti $M_{b} = konst$. Pri obratovnaju na nazivnem omrežju je motor nazivno obremnenjen in se nahaja še v nenasičenem področju magnetilne krivulje. Kakšna bo vrtilna hitrsot motorja, će se napajalna napetost zniža za $30\%$?
+## Rešitev
+
+### 1. Ključne fizikalne povezave
+
+- V serijskem motorju velja: $\Phi \sim I$
+- Navor: $M \sim \Phi \cdot I \sim I^2$
+- Ker je $M_b = \text{konst.} \Rightarrow I = \text{konst.}$ in tudi $\Phi = \text{konst.}$
+- Elektromotorna napetost: $E = k \cdot \Phi \cdot n \Rightarrow n \sim E$
+- Ker je $I$ konstanten, je tudi padec napetosti na notranji upornosti ($I R$) in na ščetkah konstanten
+### 2. Napetostna enačba
+$$
+n = \frac{U}{k_{e}k_{\phi}\sqrt{ \frac{M}{k_{m}k_{\phi}} }}
+$$
+Za serijski motor velja:
+$$
+U = E + I \cdot R + \Delta U_{\text{šč}}
+$$
+Ker so $I$, $R$ in $\Delta U_{\text{šč}}$ konstantni, lahko zapišemo razmerje za EMN:
+$$
+\frac{n'}{n_n} = \frac{E'}{E_n} = \frac{U' - \text{konst.}}{U_n - \text{konst.}}
+$$
+
+Če je $\text{konst.}$ majhna v primerjavi z $U$, lahko zapišemo:
+
+$$
+\frac{n'}{n_n} \approx \frac{U'}{U_n}
+$$
+### 3. Izračun
+
+Znižanje napetosti za 30 % pomeni:
+
+$$
+U' = 0{.}7 \cdot U_n = 0{.}7 \cdot 400\ \mathrm{V} = 280\ \mathrm{V}
+$$
+
+$$
+\frac{n'}{n_n} = \frac{280}{400} = 0{.}7 \quad \Rightarrow \quad n' = 0{.}7 \cdot 1200 = \boxed{840\ \mathrm{min}^{-1}}
+$$
+
+# Naloga 5
