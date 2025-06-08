@@ -185,3 +185,26 @@ $
 # Naloga 4
 Enosmerni motor s tujim vzbujanjem ima nazivne podatke: $P_{n} = 22kW$, $U_{n} = 300V$, $n_{n} = 300\text{min} ^{-1}$, $R_{i} = 0.08\Omega$, $\eta = 0.92$. S kolikšno vtilno hitrostjo moramo poganjati stroj, da na nazivnem omrežju deluje kot generator z obremnitvijo, pri kateri je $I'_{i} = I_{i,n}$? Padec napetosti na ščetkah ni potrebno upoštevati.
 
+## Rešitev
+
+$$
+I_n = \frac{P_n}{\eta \cdot U_n} = \frac{22\,000}{0{.}92 \cdot 300} \approx 79{.}71\ \text{A}
+$$
+
+### Motorski režim
+$$
+E_n = U_n - I_n \cdot R_i = 300 - 79{.}71 \cdot 0{.}08 \approx 293{.}62\ \text{V}
+$$
+
+### Generatorski režim
+$$
+E' = U_n + I_n \cdot R_i = 300 + 79{.}71 \cdot 0{.}08 \approx 306{.}38\ \text{V}
+$$
+
+$$
+\frac{n'}{n_n} = \frac{E'}{E_n} = \frac{306{.}38}{293{.}62} \approx 1{.}0434
+$$
+
+$$
+n' = 300 \cdot 1{.}0434 \approx 313\ \text{min}^{-1}
+$$

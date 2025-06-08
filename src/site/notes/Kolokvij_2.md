@@ -9,7 +9,7 @@
 
 
 # Naloga 1
-Na osnovi podane vezalne sheme doloćite vezno skupino in fazno številko trifaznega transformatorja s podatki $S_{n} = 250kVA$, $U_{1n} = 10kV$, $u_{k} = 4\%$. Ali je vezava pravilna (odgovor obvezno utemeljite)? Določite sekundarno medfazno napetost $U_{2n}$, če se v posamezni sekundarni tuljavici inducira napetost $200V$. K temu transformatorju želimo paralelno priključiti transfomator s podakti $S_{n} 200kVA$, $10/0.5kV$, $u_{k} = 6\%$, $Dz6$. Ali je zakšno pararelno obratovanje dopustno (odgovor obeno utemeljite)?
+Na osnovi podane vezalne sheme doloćite vezno skupino in fazno številko trifaznega transformatorja s podatki $S_{n} = 250kVA$, $U_{1n} = 10kV$, $u_{k} = 4\%$. Ali je vezava pravilna (odgovor obvezno utemeljite)? Določite sekundarno medfazno napetost $U_{2n}$, če se v posamezni sekundarni tuljavici inducira napetost $200V$. K temu transformatorju želimo paralelno priključiti transfomator s podakti $S_{n} = 200kVA$, $10/0.5kV$, $u_{k} = 6\%$, $Dz6$. Ali je takšno pararelno obratovanje dopustno (odgovor obeno utemeljite)?
 ### 1. Vezna skupina
 Iz kazalčnega diagrama in podanih faznih kotov ugotovimo, da gre za:
 $
