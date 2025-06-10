@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/kolokvij-1/","tags":["unfinished"]}
 ---
 
+![Kolokvij 1.1.jpg](/img/user/Attachments/izpiti/Kolokvij%201.1.jpg)
 # Naloga 1
 Na osnovi podane vezalne sheme doloćite vezno skupino in fazno številko trifaznega transformatorja s podatki $S_{n} = 250kVA$, $U_{1n} = 10kV$, $u_{k} = 4\%$. Ali je vezava pravilna (odgovor obvezno utemeljite)? Določite sekundarno medfazno napetost $U_{2n}$, če se v posamezni sekundarni tuljavici inducira napetost $200V$. K temu transformatorju želimo paralelno priključiti transfomator s podakti $S_{n} = 200kVA$, $10/0.5kV$, $u_{k} = 6\%$, $Dz6$. Ali je takšno pararelno obratovanje dopustno (odgovor obeno utemeljite)?
 ### 1. Vezna skupina
@@ -119,6 +120,8 @@ $$
 $$
 p = 2 \cdot p_p = 6
 $$
+
+![Kolokvij 1.2.jpg](/img/user/Attachments/izpiti/Kolokvij%201.2.jpg)
 
 # Naloga 5
 Za trigaztni transformator $S_{n} = 50kVA$, $U_{1n} = 20kV$, $U_{2n} = 0.4kV$, $f_{n} = 50Hz$, imamo na voljo rezultate meritve električnih veličin na primarni strani pri preizkusu prostega teka, preizkusu kratkega stika in obremenilnem preizkusu, vendar ni označeno, kateri rezultati so za posamezno obratovalno stanje:

@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/izpit-2024-02-12/","tags":["unfinished"]}
 ---
 
+![Izpit 2024.02.12.1.webp](/img/user/Attachments/izpiti/Izpit%202024.02.12.1.webp)
 # Naloga 1
 Trifazni transformator z podatki $S_{n} = 20kVA$, $U_{1n} = 10kV$, $U_{2n} = 0.4kV$, $f_{n} = 50Hz$ ima na sekundarni strani med sponkami b in n priključeno ohmsko breme z upornostjo $R_{b} = 20\Omega$.
 
@@ -183,5 +184,6 @@ $$
 $$
 \frac{n'}{n_n} = \frac{280}{400} = 0{.}7 \quad \Rightarrow \quad n' = 0{.}7 \cdot 1200 = \boxed{840\ \mathrm{min}^{-1}}
 $$
-
+---
+![izpit 2024.02.12.2.webp](/img/user/Attachments/izpiti/izpit%202024.02.12.2.webp)
 # Naloga 5

@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/izpit-2024-06-17/","tags":["unfinished"]}
 ---
 
+![Izpit 2024.06.17.1.jpg](/img/user/Attachments/izpiti/Izpit%202024.06.17.1.jpg)
 # Naloga 1
 Transformator ima nazivno moč $S_n = 200\ \text{MVA}$ in nazivni izkoristek $\eta_n = 0{.}98$. Razmerje izgub pri nazivnem obratovalnem stanju je: $\xi_{n} = \frac{P_{Cu,n}}{P_{Fe}} = 3$
 Transformator se pri nazivni napetosti in frekvenci pri trajnem obratovanju segreje do nadtemperature: $\Theta_{\text{max,n}} = 100\ \text{K}$
@@ -89,16 +90,15 @@ $$
 
 
 # Naloga 3
-Trifazni asinhronski motor s kratkostično kletko ima podane naslednje nazivne podatke:
-$P_n = 15\ \text{kW}$ , $n_n = 576\ \text{min}^{-1}$ , $U_n = 400\ \text{V}$ , $f_n = 50\ \text{Hz}$ , $\cos\varphi_n = 0{.}78$ , $I_n = 34\ \text{A}$ , $P_{tr+vent} = 100\ \text{W}$ , $\frac{I_Z}{I_n} = 7$ , $\frac{M_Z}{M_n} = 1{.}8$ , Vezava: $\Delta$
+Trifazni asinhronski motor s kratkostično kletko ima podane naslednje nazivne podatke: $P_n = 15\ \text{kW}$ , $n_n = 576\ \text{min}^{-1}$ , $U_n = 400\ \text{V}$ , $f_n = 50\ \text{Hz}$ , $\cos\varphi_n = 0{.}78$ , $I_n = 34\ \text{A}$ , $P_{tr+vent} = 100\ \text{W}$ , $\frac{I_Z}{I_n} = 7$ , $\frac{M_Z}{M_n} = 1{.}8$ , Vezava: $\Delta$
 
 ## a) Določite: izkoristek, slip, nazivni navor, ter vsoto izgub v statorju (Cu + Fe)
 ### 1. Sinhronska hitrost $n_s$
 Za motor z $n_n = 576\ \text{min}^{-1}$ in frekvenco $f = 50\ \text{Hz}$ domnevamo, da je $n_s = 600\ \text{min}^{-1}$, kar ustreza **$p = 5$ polparom**:
-
 $
 n_s = \frac{60 \cdot f}{p_p} = \frac{60 \cdot 50}{5} = 600\ \text{min}^{-1}
 $
+
 ### 2. Slip (zdrs)
 $
 s = \frac{n_s - n_n}{n_s} = \frac{600 - 576}{600} = \frac{24}{600} = 0{.}04 = 4\%
@@ -208,3 +208,4 @@ $$
 $$
 n' = 300 \cdot 1{.}0434 \approx 313\ \text{min}^{-1}
 $$
+![Izpit 2024.06.17.2.jpg](/img/user/Attachments/izpiti/Izpit%202024.06.17.2.jpg)

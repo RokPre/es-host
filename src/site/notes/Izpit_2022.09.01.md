@@ -2,11 +2,12 @@
 {"dg-publish":true,"permalink":"/izpit-2022-09-01/","tags":["unfinished"]}
 ---
 
+![Izpit 2022.09.01.jpg](/img/user/Attachments/izpiti/Izpit%202022.09.01.jpg)
 # Naloga 1
 
-Transformator ima izgube v navitju $P_{cu} = 1750\ \text{W}$ in izgube v prostem teku $P_0 = 350\ \text{W}$. Njegova toplotna časovna konstanta znaša $T = 2\ \text{h}$. Pri nespremenjeni napajalni napetosti transformator obremenimo z **dvakratnim nazivnim tokom**.
+Transformator ima izgube v navitju $P_{cu} = 1750\ \text{W}$ in izgube v prostem teku $P_0 = 350\ \text{W}$. Njegova toplotna časovna konstanta znaša $T = 2\ \text{h}$. Pri nespremenjeni napajalni napetosti transformator obremenimo z dvakratnim nazivnim tokom.
 
-Po kolikšnem času mora izklopiti **termična zaščita**, da ne pride do pregrevanja preko dopustne (nazivne) temperature stroja?
+Po kolikšnem času mora izklopiti termična zaščita, da ne pride do pregrevanja preko dopustne (nazivne) temperature stroja?
 
 
 ## Rešitev
@@ -38,25 +39,12 @@ $$
 Pri tem pa velja:
 
 $$
-\frac{\Theta_{\max}'}{\Theta_{\max, n}} = \frac{1 + x^2 \cdot \xi}{1 + \xi}
-$$
-
-kjer je $\xi$ razmerje med izgubami v navitju in izgubami v železu (prostem teku):
-
-$$
-\xi = \frac{P_{cu}}{P_0} = \frac{1750}{350} = 5
+\frac{\Theta_{\max}'}{\Theta_{\max, n}} = \frac{P_{izg}'}{P_{izg,n}}
 $$
 
 Zato:
-
 $$
-\frac{\Theta_{\max}'}{\Theta_{\max, n}} = \frac{1 + 4 \cdot 5}{1 + 5} = \frac{21}{6} = 3{.}5
-$$
-
-Torej se nova maksimalna temperatura dvigne na:
-
-$$
-\Theta_{\max}' = 3{.}5 \cdot \Theta_{\max, n}
+\Theta_{\max}' = \frac{7450}{2100} \cdot \Theta_{\max, n} =3.55\Theta_{max,n}
 $$
 
 Vstavimo v enačbo za naraščanje temperature:
@@ -64,32 +52,9 @@ Vstavimo v enačbo za naraščanje temperature:
 $$
 \Theta(t_0) = \Theta_{\max}' \cdot \left(1 - e^{-t_0/T} \right) = \Theta_{\max, n}
 $$
+Tako je: 
+$$t_{0} = 0.66\text{h} = 39\text{min}\ 42\text{s}$$
 
-Delimo z $\Theta_{\max}'$:
-
-$$
-\frac{\Theta_{\max, n}}{\Theta_{\max}'} = 1 - e^{-t_0/T}
-$$
-
-Izoliramo eksponentni člen:
-
-$$
-e^{-t_0/T} = 1 - \frac{1}{3{.}5} = \frac{2{.}5}{3{.}5} = \frac{5}{7}
-$$
-
-Logaritemsko:
-
-$$
--\frac{t_0}{T} = \ln\left(\frac{5}{7}\right) \quad \Rightarrow \quad t_0 = -T \cdot \ln\left(\frac{5}{7}\right)
-$$
-
-Vstavimo $T = 2\ \text{h}$:
-
-$$
-t_0 = -2 \cdot \ln\left(\frac{5}{7}\right) \approx -2 \cdot (-0{.}3365) = 0{.}673\ \text{h} \approx 40{.}4\ \text{min}
-$$
-
-**Termična zaščita mora izklopiti transformator najpozneje po $40{.}4\ \text{min}$**, da ne pride do preseganja dopustne nazivne temperature.
 
 # Naloga 2
 
@@ -164,16 +129,15 @@ $$
 Potreben vzbujalni tok je $I_v \approx 95{.}0\ \text{A}$
 
 # Naloga 3
-Trifazni asinhronski motor s kratkostično kletko ima podane naslednje nazivne podatke:
-$P_n = 15\ \text{kW}$ , $n_n = 576\ \text{min}^{-1}$ , $U_n = 400\ \text{V}$ , $f_n = 50\ \text{Hz}$ , $\cos\varphi_n = 0{.}78$ , $I_n = 34\ \text{A}$ , $P_{tr+vent} = 100\ \text{W}$ , $\frac{I_Z}{I_n} = 7$ , $\frac{M_Z}{M_n} = 1{.}8$ , Vezava: $\Delta$
+Trifazni asinhronski motor s kratkostično kletko ima podane naslednje nazivne podatke: $P_n = 15\ \text{kW}$ , $n_n = 576\ \text{min}^{-1}$ , $U_n = 400\ \text{V}$ , $f_n = 50\ \text{Hz}$ , $\cos\varphi_n = 0{.}78$ , $I_n = 34\ \text{A}$ , $P_{tr+vent} = 100\ \text{W}$ , $\frac{I_Z}{I_n} = 7$ , $\frac{M_Z}{M_n} = 1{.}8$ , Vezava: $\Delta$
 
 ## a) Določite: izkoristek, slip, nazivni navor, ter vsoto izgub v statorju (Cu + Fe)
 ### 1. Sinhronska hitrost $n_s$
 Za motor z $n_n = 576\ \text{min}^{-1}$ in frekvenco $f = 50\ \text{Hz}$ domnevamo, da je $n_s = 600\ \text{min}^{-1}$, kar ustreza **$p = 5$ polparom**:
-
 $$
 n_s = \frac{60 \cdot f}{p_p} = \frac{60 \cdot 50}{5} = 600\ \text{min}^{-1}
 $$
+
 ### 2. Slip (zdrs)
 $$
 s = \frac{n_s - n_n}{n_s} = \frac{600 - 576}{600} = \frac{24}{600} = 0{.}04 = 4\%

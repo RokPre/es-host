@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/kolokvij-2/","tags":["unfinished"]}
 ---
 
+![Kolokvij 2.1.webp](/img/user/Attachments/izpiti/Kolokvij%202.1.webp)
 # Naloga 1
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/kolokvij-1/#naloga-1" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
@@ -113,7 +114,7 @@ $
 </div></div>
 
 # Naloga 4
-Sinhronski turbogenerator $S_n = 25\ \mathrm{MVA}$, $U_n = 6{.}3\ \mathrm{kV}$, $50\ \mathrm{Hz}$, $\cos\varphi_n = 0{.}6$, $X_{sr} = 1{.}8$ je obremenjen s polovico nazivnega toka pri $\cos\varphi = 0{.}8$ na togem omrežju nazivne napetosti in frekvence. Pri nespremenjenem vzbujanju počasi povečujemo dovod pare na turbino. Določite navidezno moč $S_{om}$ in delovno moč $P_{om}$ ter $\cos\varphi$ tik preden generator pade iz sinhronizma (obvezna skica obeh obratovalnih stanj).
+Sinhronski turbogenerator $S_n = 25 \mathrm{MVA}$, $U_{zn} = 6.3\ \mathrm{kV}$, $f_n = 50\ \mathrm{Hz}$, $\cos\varphi_{2n} = 0.6$, $X_{sr} = 1.8$ je obremenjen s polovičnim nazivnim tokom pri $\cos\varphi_2 = 0.8$ na togem omrežju, nazivne napetosti in frekvence. Pri nespremenjenem vzbujanju nato počasi povečujemo dovod pare na turbino. Določite navidezno $S_{om}$ in delovno $P_{om}$ moč ter $\cos\varphi_2$ tik preden generator pade iz sinhronizma(obvezna skica obeh obratovalnih stanj).
 ## 1) Izračun nazivnega toka
 $$
 I_n = \frac{S_n}{\sqrt{3} \cdot U_n} = \frac{25 \cdot 10^6}{\sqrt{3} \cdot 6300} \approx 2291\ \mathrm{A}
@@ -161,6 +162,7 @@ $$
 $$
 P_{om} = S_{om} \cdot \cos\varphi_{om} \approx 46{.}8 \cdot 0{.}816 \approx 38{.}2\ \mathrm{MW}
 $$
+![Kolokvij.2.2.webp](/img/user/Attachments/izpiti/Kolokvij.2.2.webp)
 # Naloga 5
 Trifazni transformator s podano napisno tablico obratuje na nazivnem omrežju in napaja trifazni elektromotor.
 
