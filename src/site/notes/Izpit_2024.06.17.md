@@ -7,9 +7,9 @@
 Transformator ima nazivno moč $S_n = 200\ \text{MVA}$ in nazivni izkoristek $\eta_n = 0{.}98$. Razmerje izgub pri nazivnem obratovalnem stanju je: $\xi_{n} = \frac{P_{Cu,n}}{P_{Fe}} = 3$
 Transformator se pri nazivni napetosti in frekvenci pri trajnem obratovanju segreje do nadtemperature: $\Theta_{\text{max,n}} = 100\ \text{K}$
 
-Nato transformator priključimo na omrežje z znižano napetostjo $U = 0{.}8 \cdot U_n$ in povišano frekvenco $f = 1{.}2 \cdot f_n$, pri čemer ostane tok **enak nazivnemu**: $I = I_n$.
+Nato transformator priključimo na omrežje z znižano napetostjo $U = 0{.}8 \cdot U_n$ in povišano frekvenco $f = 1{.}2 \cdot f_n$, pri čemer ostane tok enak nazivnemu: $I = I_n$.
 
-Vprašanje: **Do katere nadtemperature $\Theta_{\text{max}}'$ se bo transformator segrel pri trajnem obratovanju v novih razmerah?**
+Vprašanje: Do katere nadtemperature $\Theta_{\text{max}}'$ se bo transformator segrel pri trajnem obratovanju v novih razmerah?
 
 ## Rešitev
 ### 1. Izgube v bakru
@@ -50,39 +50,45 @@ $$
 # Naloga 2
 Sinhrosnki turbogenerator $S_{n} = 200MVA$, $U_{2n} = 15kV$, $\cos(\varphi_{2n}) = 0.8$, $X_{sr} = 1.4$, $I_{1n} = 300A$ obratuje na togem nazivnem omrežju pri obremenitivi $S' = 100MVA$, $\cos(\varphi_{2})' = 0.6$. Za to obratovalno stanje določite potrebne vzbujalni tok $I_{1}'$ in oba kolesna kota $\delta_{n}$ in $\delta'$. Obvezna tudi skica obeh obratovlanih stanj.
 ## Izračuni
-
-**1. EMN pri nazivnem stanju:**
-
 $$
-E_{0n} = \sqrt{(15\,252)^2 + 336^2} \approx 15\,253\ \text{V}
+I_{2,n} =\frac{S_{n}}{\sqrt{ 3 } \cdot U_{2,n}} =\frac{200000000}{\sqrt{ 3 }\cdot 15000} = 7698A
 $$
-
-**2. EMN pri $S' = 100$ MVA:**
+Inducirana pri nazivnem stanju:
 
 $$
-I_2' = \frac{100 \cdot 10^6}{\sqrt{3} \cdot 15\,000} \approx 3849\ \text{A}
+E_{0} = \sqrt{ (U_{2} + I_{2}X_{sr}\sin(\varphi_{2}))^{2} + (I_{2}X_{sr}\cos(\varphi_{2}))^{2} }
+$$
+$$
+E_{0n} = \sqrt{(15000+7698\cdot 1.4 \cdot 0.6)^2 + (7698\cdot 1.4\cdot 0.8)^2} = 23133V
+$$
+
+2. Inducirana napetost pri $S' = 100$ MVA:
+
+$$
+I_2' = \frac{100000000 }{\sqrt{3} \cdot 15\,000} = 3849A
+$$
+$$
+E_{0}' = \sqrt{ (15000+3849 \cdot 1.4\cdot  0.8)^{2}+(3849\cdot 1.4 \cdot 0.6)^{2} } = 19580V
+$$
+
+3. Vzbujalni tok:
+
+$$
+I_1' = 300 \cdot \frac{19580}{23133} = 254A
+$$
+
+4. Kolesna kota:
+$$
+\tan(\delta) = \frac{I_2 X_s \cdot \cos\varphi_2}{U_2 + I_2 X_s \cdot \sin\varphi_2}
 $$
 
 $$
-E_0' = \sqrt{(19\,309)^2 + 3233^2} \approx 19\,601\ \text{V}
-$$
-
-**3. Vzbujalni tok:**
-
-$$
-I_1' = 300 \cdot \frac{19\,601}{15\,253} \approx 386\ \text{A}
-$$
-
-**4. Kolesna kota:**
-
-$$
-\delta_n = \arctan\left( \frac{336}{15\,252} \right) \approx 1{.}26^\circ
+\delta_n = \arctan\left( \frac{7698\cdot 1.4\cdot 0.8}{15000+7698\cdot 1.4\cdot 0.6} \right) = 21.8^{\circ}
 $$
 
 $$
-\delta' = \arctan\left( \frac{3233}{19\,309} \right) \approx 9{.}5^\circ
+\delta' = \arctan\left( \frac{3849\cdot 1.4\cdot 0.6}{15000+3849\cdot 1.4\cdot 0.8} \right) = 9.4^{\circ}
 $$
-
 # Naloga 3
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/izpit-2022-09-01/#naloga-3" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
@@ -188,4 +194,3 @@ $$
 $$
 n' = 300 \cdot 1{.}0434 \approx 313\ \text{min}^{-1}
 $$
-![Izpit 2024.06.17.2.jpg](/img/user/Attachments/izpiti/Izpit%202024.06.17.2.jpg)

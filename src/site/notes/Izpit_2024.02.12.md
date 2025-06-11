@@ -15,7 +15,7 @@ Tok v bremenu:
 $$
 I_b = \frac{U_{2f}}{R_b} = \frac{230}{20} = 11{.}5\ \text{A}
 $$
-Ker je breme priključeno **med eno fazo (b) in ničlo**, teče ves tok $I_b$ skozi ničlovod. Torej:
+Ker je breme priključeno med eno fazo (b) in ničlo, teče ves tok $I_b$ skozi ničlovod. Torej:
 
 Porabljena moč:
 $$
@@ -35,7 +35,7 @@ $$
 ## 2. Aktivna moč v omrežje $P_{el}$
 
 $$
-P_{el} = \sqrt{3} \cdot U_2 \cdot I_2 \cdot \cos\varphi = \sqrt{3} \cdot 3000 \cdot 1924{.}5 \cdot 1 \approx 10\,000\,000\ \text{W} = 10\ \text{MW}
+P_{el} = \sqrt{3} \cdot U_2 \cdot I_2 \cdot \cos\varphi = \sqrt{3} \cdot 3000 \cdot 1924{.}5 \cdot 1 \approx  10\ \text{MW}
 $$
 
 ## 3. Kolesni kot $\delta$
@@ -55,14 +55,14 @@ $$
 $$
 \delta = \arctan(1{.}0264) \approx 45{.}8^\circ
 $$
-## 4. Izračun EMN $E_0'$ za $\cos\varphi = 1$
+## 4. Izračun $E_0'$ za $\cos\varphi = 1$
 
 $$
 E_0' = \sqrt{(U_2 + I_2 \cdot X_{sr} \cdot \sin\varphi)^2 + (I_2 \cdot X_{sr} \cdot \cos\varphi)^2}
 $$
 
 $$
-E_0' = \sqrt{(3000)^2 + (1924{.}5 \cdot 1{.}6)^2} = \sqrt{9\,000\,000 + 9\,486\,118{.}4} \approx \sqrt{18\,486\,118{.}4} \approx 4300{.}7\ \text{V}
+E_0' = \sqrt{(3000)^2 + (1924{.}5 \cdot 1{.}6)^2} = \sqrt{9\,000\,000 + 9\,486\,118{.}4}  \approx 4300{.}7\ \text{V}
 $$
 
 ## 5. Izračun $E_{0n}$ iz referenčnega stanja ($I_{2n}$, $\cos\varphi = 0.8$)
@@ -76,10 +76,8 @@ E_{0n} = \sqrt{(3000 + 1924{.}5 \cdot 1{.}6 \cdot 0{.}6)^2 + (1924{.}5 \cdot 1{.
 $$
 
 $$
-E_{0n} = \sqrt{(3000 + 1847{.}5)^2 + (2463{.}36)^2} = \sqrt{(4847{.}5)^2 + (2463{.}36)^2} \approx 5432\ \text{V}
+E_{0n} \approx 5432\ \text{V}
 $$
-
----
 
 ## 6. Razmerje za vzbujalni tok:
 
@@ -95,7 +93,7 @@ Trifazni asinhronski motor s kratkostično kletko ima naslednje podatke:
 $P_n = 15\ \mathrm{kW}$, $U_n = 400\ \mathrm{V}$, $f = 50\ \mathrm{Hz}$,  
 $I_n = 32\ \mathrm{A}$, $n_n = 570\ \mathrm{min}^{-1}$, $\cos\varphi = 0{.}80$,  
 $\frac{M_{z}}{M_n} = 1{.}6$, $\frac{M_{max}}{M_n} = 2{.}8$, $\frac{I_z}{I_n} = 6$  
-vezava: **trikot**.
+vezava: trikot.
 
 ### a) Določite nazivni navor, nazivni slip in maksimalni izkoristek motorja.
 $$
@@ -115,7 +113,7 @@ Podan je relativni zagonski navor:
 $$
 \frac{M_z^\Delta}{M_n} = 1{.}6 \quad \Rightarrow \quad M_z^\Delta = 1{.}6 \cdot M_n = 1{.}6 \cdot 251{.}3 \approx 402{.}1\ \text{Nm}
 $$
-#### 2. Navor pri zaganjanju v **vezavi zvezda**
+#### 2. Navor pri zaganjanju v vezavi zvezda
 
 V zvezdi je fazna napetost:
 
@@ -128,7 +126,7 @@ Ker je navor sorazmeren s kvadratom napetosti:
 $$
 M_z^Y = M_z^\Delta \cdot \left( \frac{U_Y}{U_\Delta} \right)^2 = 402{.}1 \cdot \left( \frac{230{.}94}{400} \right)^2 \approx 402{.}1 \cdot 0{.}333 \approx \boxed{133{.}9\ \text{Nm}}
 $$
-#### 3. Zagonski tok v **vezavi zvezda**
+#### 3. Zagonski tok v vezavi zvezda
 
 Zagonski tok v trikot:
 
@@ -145,45 +143,115 @@ $$
 Slip je 1 saj ob času zagona rotor stoji.
 
 # Naloga 4
-Enosmerni motor s serijskim vzbujanjem ima nazivne podatke: $U_{n} = 400V$, $P_{n} = 10kW$, $n_{n} = 1200\text{min}^{-1}$. Poganja delovni stroj, katerega bremenski navor je neodvisen od vrtilne hitrosti $M_{b} = konst$. Pri obratovnaju na nazivnem omrežju je motor nazivno obremnenjen in se nahaja še v nenasičenem področju magnetilne krivulje. Kakšna bo vrtilna hitrsot motorja, će se napajalna napetost zniža za $30\%$?
+Enosmerni motor s serijskim vzbujanjem ima nazivne podatke: $U_{n} = 400V$, $P_{n} = 10kW$, $n_{n} = 1200\text{min}^{-1}$. Poganja delovni stroj, katerega bremenski navor je neodvisen od vrtilne hitrosti $M_{b} = konst$. Pri obratovnaju na nazivnem omrežju je motor nazivno obremnenjen in se nahaja še v nenasičenem področju magnetilne krivulje. Kakšna bo vrtilna hitrsot motorja, če se napajalna napetost zniža za $30\%$?
 ## Rešitev
 
-### 1. Ključne fizikalne povezave
-
-- V serijskem motorju velja: $\Phi \sim I$
-- Navor: $M \sim \Phi \cdot I \sim I^2$
-- Ker je $M_b = \text{konst.} \Rightarrow I = \text{konst.}$ in tudi $\Phi = \text{konst.}$
-- Elektromotorna napetost: $E = k \cdot \Phi \cdot n \Rightarrow n \sim E$
-- Ker je $I$ konstanten, je tudi padec napetosti na notranji upornosti ($I R$) in na ščetkah konstanten
-### 2. Napetostna enačba
 $$
-n = \frac{U}{k_{e}k_{\phi}\sqrt{ \frac{M}{k_{m}k_{\phi}} }}
-$$
-Za serijski motor velja:
-$$
-U = E + I \cdot R + \Delta U_{\text{šč}}
-$$
-Ker so $I$, $R$ in $\Delta U_{\text{šč}}$ konstantni, lahko zapišemo razmerje za EMN:
-$$
-\frac{n'}{n_n} = \frac{E'}{E_n} = \frac{U' - \text{konst.}}{U_n - \text{konst.}}
+\frac{n'}{n_{n}} = \frac{E'}{E_{n}} =0.7\Rightarrow 1200\cdot 0.7 = 840 \text{min}^{-1}
 $$
 
-Če je $\text{konst.}$ majhna v primerjavi z $U$, lahko zapišemo:
 
-$$
-\frac{n'}{n_n} \approx \frac{U'}{U_n}
-$$
-### 3. Izračun
-
-Znižanje napetosti za 30 % pomeni:
-
-$$
-U' = 0{.}7 \cdot U_n = 0{.}7 \cdot 400\ \mathrm{V} = 280\ \mathrm{V}
-$$
-
-$$
-\frac{n'}{n_n} = \frac{280}{400} = 0{.}7 \quad \Rightarrow \quad n' = 0{.}7 \cdot 1200 = \boxed{840\ \mathrm{min}^{-1}}
-$$
----
 ![izpit 2024.02.12.2.webp](/img/user/Attachments/izpiti/izpit%202024.02.12.2.webp)
 # Naloga 5
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/izpit-2024-09-03/#naloga-5" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+# Naloga 5
+Primarno navitje enofaznega transformatorja s podano napisno tablico je priključeno na nazivno napajanje. Napisna tablica:
+
+| Parameter             | Vrednost       |
+| --------------------- | -------------- |
+| **Type**              | S              |
+| **Class**             | CL. H150       |
+| **Cat. No.**          | 15S2H          |
+| **Rating**            | 15 kVA         |
+| **HV (High Voltage)** | 240 V / 64.6 A |
+| **LV (Low Voltage)**  | 120 V / 125 A  |
+
+Opravili smo meritve transformatorja v prostem teku in pri obremenitvi z ohmskim bremenom pri približno polovici nazivne moči. Merilni rezultati so v spodnji tabeli.
+
+|             | $U_1\ /\ \text{V}$ | $I_1\ /\ \text{A}$ | $P_1\ /\ \text{W}$ | $U_2\ /\ \text{V}$ | $I_2\ /\ \text{A}$ |
+| ----------- | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
+| Prosti tek  | 240                | 1,71               | 105                | 122,8              | 0                  |
+| Obremenitev | 240                | 32,9               | 7871               | 121,5              | 63,3               |
+
+Kolikšne so izgube tega transformatorja pri obremenitvi z nazivno močjo?
+
+## Rešitev
+### 1. Izgube v železu (merjene pri prostem teku)
+$
+P_{\text{Fe}} = 105\ \text{W}
+$
+
+### 2. Izgube v bakru pri meritvi (pri $I_{2} = 63.3\ \text{A}$)
+Skupne izgube pri obremenitvi:
+$
+P_{\text{izg,mer}} = P_{1,\text{obrem}} - P_{2,\text{obrem}} = 7871 - (121.5 \cdot 63.3) =  180\ \text{W}
+$
+Torej:
+$
+P_{\text{Cu,mer}} = P_{\text{izg,mer}} - P_{\text{Fe}} = 180 - 105 = 75\ \text{W}
+$
+
+### 3. Korekcija na nazivni tok ($I_{2n} = 125\ \text{A}$)
+Ker veljajo **izgube v bakru $\propto I^2$**, lahko skaliramo:
+$
+P_{\text{Cu,n}} = P_{\text{Cu,mer}} \cdot \left( \frac{125}{63.3} \right)^2 = 75 \cdot \left( \frac{125}{63.3} \right)$
+$
+P_{\text{Cu,n}} \approx 75 \cdot 3.902 \approx 292.7\ \text{W}
+$
+
+### 4. Skupne izgube pri nazivni obremenitvi:
+$
+P_{\text{izg,n}} = P_{\text{Fe}} + P_{\text{Cu,n}} = 105 + 292.7 = 397.7\ \text{W}
+$
+
+</div></div>
+
+
+# Naloga 6
+Trifazni asinhrosnki motor s kratkostično kletko in podano napisno tablico ima možnost prevezave statorkih navitji za dve različni hitrosti vrtenja:
+
+| Type    | T90 S4/2 IM B3 | 3 - MOTOR        |
+| ------- | -------------- | ---------------- |
+| Ser. No | G 763304       |                  |
+|         | 1.0/1.25kW     | 1390/2900 min^-1 |
+|         | 400V           | 50Hz             |
+|         | 2.5/3.6A       |                  |
+| cos(φ)  | 0.82/0.81      |                  |
+| Ins. CL | F              | IP 54            |
+
+S pomočjo Pronyjeve zavore bi radi izmerilill obremilno karakteristiko pri obeh crtilnih hitrostih. Na razpolago imamo tehtnico, ki lahko meri samo do $1kg$.
+
+## a) 
+Koliko najmanj mora biti dolga ročica Pronyjeve zavore?
+Upoštevamo:
+- maksimalna merljiva sila tehtnice: $F_{max} = 1\,\text{kg} \cdot 9.81\,\frac{\text{m}}{\text{s}^2} = 9.81\,\text{N}$
+- želimo izmeriti nazivni navor pri **nižji hitrosti** ($n = 1390\,\text{min}^{-1}$, $P = 1.0\,\text{kW}$)
+
+### 1. Izračun maksimalnega navora
+$$
+M = \frac{P \cdot 60}{2\pi n} = \frac{1000 \cdot 60}{2\pi \cdot 1390} \approx 6.88\,\text{Nm}
+$$
+
+### 2. Dolžina ročice
+$$
+r = \frac{M}{F_{max}} = \frac{6.88}{9.81} \approx 0.702\,\text{m}
+$$
+
+## b)
+Pri kateri nazivni hitrosti je izkoristek večji?
+
+Izračun izkoristka za vsako delovno točko:
+### 1. Nižja hitrost ($P = 1.0\,\text{kW}$, $I = 2.5\,\text{A}$, $\cos\varphi = 0.82$)
+$$
+\eta_1 = \frac{1000}{\sqrt{3} \cdot 400 \cdot 2.5 \cdot 0.82} \approx \frac{1000}{1419.3} \approx 0.704
+$$
+
+### 2. Višja hitrost ($P = 1.25\,\text{kW}$, $I = 3.6\,\text{A}$, $\cos\varphi = 0.81$)
+$$
+\eta_2 = \frac{1250}{\sqrt{3} \cdot 400 \cdot 3.6 \cdot 0.81} \approx \frac{1250}{2011.5} \approx 0.621
+$$
+Pri nižji nazivni hitrosti vrtenja ima stroj višji izkoristek.

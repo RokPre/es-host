@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/izpit-2021-06-17/","tags":["complete"]}
+{"dg-publish":true,"permalink":"/izpit-2021-06-17/","tags":["unfinished"]}
 ---
 
 ![Izpit 2021.06.17.png](/img/user/Attachments/izpiti/Izpit%202021.06.17.png)
