@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/izpit-2021-06-17/","tags":["unfinished"]}
+{"dg-publish":true,"permalink":"/izpit-2021-06-17/","tags":["complete"]}
 ---
 
 ![Izpit 2021.06.17.png](/img/user/Attachments/izpiti/Izpit%202021.06.17.png)
@@ -14,7 +14,7 @@ $$
 P_{\text{izg}} = P_{Cu} + P_{Fe} = P_{k} + P_{0} = 1375\ \text{W} + 150\ \text{W} = 1525\ \text{W}
 $$
 
-Če bi se tok bremena $I_{b}$ razlokoval od nazivnega toka $I_{n}$, potem bi morali prilagoditi izgube v navitju.
+Če bi se tok bremena $I_{b}$ razlikoval od nazivnega toka $I_{n}$, potem bi morali prilagoditi izgube v navitju.
 
 ## b) Kolikšna je napetost med priključkoma $2U$ in $2N$, ko transformator deluje v prostem teku na nazivnem omrežju?
 [[Predavanje 7#Yzn5\|Predavanje 7#Yzn5]]
@@ -75,11 +75,10 @@ Generator ima torej dva pola, kar je značilno za turbogeneratorje, ki obratujej
 Trifazni asinhronski motor s kratkostično kletko ima naslednje nazivno podane podatke: $P_n = 3\ \text{kW}$ | $U_n = 400\ \text{V}$ | $f_n = 50\ \text{Hz}$ | $I_n = 6\ \text{A}$ | $\cos(\varphi_n) = 0{.}85$ | $n_n = 1440\ \text{min}^{-1}$, ima izgube trenja in ventilacije v prostem teku enake $P_{tr+v} = 16\ \text{W}$.
 
 ## a) Kolikšen je nazivni izkoristek motorja?
-Izkoristek motorja je podan kot razmerje med mehansko močjo na gredi in skupnim dovodom električne moči. Če upoštevamo le izgube trenja in ventilacije (kar je poenostavitev), velja:
+Izkoristek nam pove, koliko energije damo v stroj in koliko jo dobimo iz njega. Ker je v tej nalogi obravnavan motor, vanj dovajamo električno energijo, iz njega pa pridobimo mehansko. Zato je izkoristek podan kot razmerje med mehansko močjo in dovedeno električno močjo:
 $$
-\eta = \frac{P_n - P_{\text{izg}}}{P_n} = \frac{3000 - 16}{3000} = \frac{2984}{3000} \approx 0{.}9947 = 99{.}5\%
+\eta =  \frac{P_{m}}{P_{el}} =  \frac{P_{n}}{\sqrt{3} \cdot U_{n} \cdot I_{n} \cdot \cos(\varphi_{n})} = \frac{3000}{\sqrt{3} \cdot 400 \cdot 6 \cdot 0{.}85} \approx 85\%
 $$
-Opomba: v resnici bi morali upoštevati še izgube v bakru, železu in druge mehanske izgube, a ker naloga eksplicitno poda le $P_{\text{izg}} = 16\ \text{W}$, je rezultat veljaven v tem kontekstu.
 
 ## b) Kolikšna je hitrost vrtilnega magnetnega polja, ki ga ustvari statorski tok v nazivnem obratovanju?
 Vrtilna hitrost magnetnega polja (sinhronska hitrost) je določena z:
@@ -116,20 +115,20 @@ P = \frac{U_{b}^2}{R_b} = \frac{180^2}{1{.}8} = \frac{32400}{1{.}8} = 18000\ \te
 $$
 Generator torej v tem stanju oddaja 18 kW električne moči.
 
-## b) Kolikšna je upornost statorskega navitja rotorja?
+## b) Kolikšna je upornost statorskega navitja?
 Uporaba osnovne enačbe za enosmerni stroj:
 $$
-U = E - I_r \cdot R_r
+U = E - I_s \cdot R_s
 $$
 kjer je:
 - $U = 180\ \text{V}$ (spremljana napetost na sponkah),
 - $E = 200\ \text{V}$ (inducirana napetost),
-- $I_r$ ... tok skozi rotor, ki ga izračunamo iz:
+- $I_r$ ... tok skozi stator, ki ga izračunamo iz:
 
 $$
-I_r = \frac{U}{R_b} = \frac{180}{1{.}8} = 100\ \text{A}
+I_s = \frac{U}{R_b} = \frac{180}{1{.}8} = 100\ \text{A}
 $$
 Zdaj lahko izračunamo notranjo upornost rotorja:
 $$
-R_r = \frac{E - U}{I_r} = \frac{200 - 180}{100} = \frac{20}{100} = 0{.}2\ \Omega
+R_s = \frac{E - U}{I_s} = \frac{200 - 180}{100} = \frac{20}{100} = 0{.}2\ \Omega
 $$
