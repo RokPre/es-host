@@ -112,19 +112,19 @@ Nazivni navor:
 $
 M_n = \frac{P_{meh}}{\omega} = \frac{P_{meh}}{2\pi \cdot \frac{n_n}{60}} = \frac{15\,000}{2\pi \cdot \frac{576}{60}} = \frac{15\,000}{60{.}32} \approx 248{.}8\ \text{Nm}
 $
-### 4. Vhodna moč $P_{cel}$
+### 4. Vhodna moč $P_{el}$
 $
-P_{cel} = \sqrt{3} \cdot U \cdot I \cdot \cos\varphi = \sqrt{3} \cdot 400 \cdot 34 \cdot 0{.}78 \approx 18\,393\ \text{W}
+P_{el} = \sqrt{3} \cdot U \cdot I \cdot \cos\varphi = \sqrt{3} \cdot 400 \cdot 34 \cdot 0{.}78 \approx 18\,393\ \text{W}
 $
 ### 5. Izkoristek $\eta$
 Izkoristek je razmerje med močjo na gredi in električno dovodeno močjo:
 $
-\eta = \frac{P_n}{P_{cel}} = \frac{15\,000}{18\,393} \approx 0{.816} = 81{.6}\%
+\eta = \frac{P_n}{P_{el}} = \frac{15\,000}{18\,393} \approx 0{.816} = 81{.6}\%
 $
 ### 6. Skupne izgube v statorju
 
 $
-P_{el, n} = P_{vp} + P_{Cu} +P_{fe}
+P_{el, n} = P_{vp} + P_{Cu} +P_{Fe}
 $
 $
 P_{vp} = \frac{P_{meh}}{1-s} 
@@ -139,44 +139,24 @@ $
 P_{el,n} = \frac{P_{n} + P_{tr,v}}{1-\left( \frac{n_{s}-n_{n}}{n_{s}} \right)} + P_{Cu} + P_{Fe} 
 $
 $
-P_{Cu} + P_{Fe} = 18393 - \frac{15000 + 100}{1 - \left( \frac{600-576}{600} \right)} = 2663.833\ldots
+P_{Cu} + P_{Fe} = 18393 - \frac{15000 + 100}{1 - \left( \frac{600-576}{600} \right)} = 2663.8W
 $
-
 
 
 ## b) Kolikšna sta zagonski tok in navor, če motor zaganjamo v vezavi $Y$ pri 25 % nazivni napetosti?
-### 1. Zagonski tok
-Pri vezavi $\Delta$ je nazivni tok $I_n = 34\ \text{A}$. Zagonski tok pri tej vezavi bi bil:
 $
-I_Z^{\Delta} = 7 \cdot I_n = 238\ \text{A}
+M_{zag}^{\Delta} =1.8 M_{n} = 1.8\cdot 248.8Nm = 447.84Nm
 $
-Če motor zaženemo v **vezavi $Y$**, potem je napetost na navitju **nižja za faktor $\sqrt{3}$**, tok pa prav tako:
 $
-I_Z^Y = \frac{I_Z^{\Delta}}{\sqrt{3}} \approx \frac{238}{1{.}732} \approx 137{.}4\ \text{A}
+\frac{U^{Y}}{U^{\Delta}} = \frac{1}{\sqrt{ 3 }}
 $
-Če je napetost **znižana na 25 %**:
 $
-I_Z = 0{.}25 \cdot 137{.}4 \approx 34{.}4\ \text{A}
+\frac{U_{25\%}^{Y}}{U^{\Delta}} = \frac{0.25}{\sqrt{ 3 }}
 $
-### 2. Zagonski navor
-
-Zagonski navor pri nazivni napetosti v vezavi $\Delta$ je podan z razmerjem:
-
 $
-M_{Z,\Delta} = 1.8 \cdot M_n = 1.8 \cdot 248.8 = 497.6\ \text{Nm}
+\frac{M_{zag,25\%}^{Y}}{M_{zag}^{\Delta}} = \left(\frac{U_{25\%}^{Y}}{U^{\Delta}}\right)^{2} \Rightarrow M_{zag,25\%}^{Y} =447.84 \cdot 0.0208 = 9.3Nm
 $
 
-Pri zaganjanju v **vezavi $Y$** in znižani napajalni napetosti na **25 %** nazivnega nivoja ($0.25 \cdot U_L$), je napetost na **faznem navitju**:
-
-$
-U_{Y,25\%} = \frac{0.25 \cdot U_n}{\sqrt{3}} = \frac{U_{\Delta}}{4 \cdot \sqrt{3}}
-$
-
-Ker je zagonski navor sorazmeren s kvadratom fazne napetosti, se novi navor zmanjša za:
-
-$
-M_{Z,Y25\%} = M_{Z,\Delta} \cdot \left(\frac{0.25}{\sqrt{3}}\right)^2 = 497.6 \cdot 0.0208 \approx 10.4\ \text{Nm}
-$
 
 </div></div>
 

@@ -13,7 +13,9 @@ $P = \frac{mEU}{X_{sr}}\sin(\delta)$
 $\frac{I_{1}'}{I_{1,n}} = \frac{E_{0}'}{E_{0, n}}$
 $I\cdot \cos(\varphi_{2}) = \frac{E }{X_{sr}}\sin(\delta)$
 $n = \frac{f \cdot 60}{p_{p}}$
-
+$M = \frac{m_{s}}{2\pi n_{n}}\frac{U_{s}^{2}}{\left( R_{s}+\frac{R_{R}}{s} \right)^{2}+(X_{\delta,s} +X_{\delta,R})^{2}}\frac{R_{R}}{s}$
+$M_{zag} = \frac{m_{s}}{2\pi n_{n}}\frac{U_{s}^{2}}{\left( R_{s}+R_{R} \right)^{2}+(X_{\delta,s} +X_{\delta,R})^{2}}R_{R}$
+$\frac{M_{zag}'}{M_{zag,n}}= (\frac{U}{U_{n}})^{2}\ ;\ \frac{M_{om}'}{M_{om,n}}= (\frac{U}{U_{n}})^{2}$ 
 # Asinhronski stroji
 # Komutatorju
 

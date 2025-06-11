@@ -58,7 +58,7 @@ $$t_{0} = 0.66\text{h} = 39\text{min}\ 42\text{s}$$
 
 # Naloga 2
 
-Sinhronski turbogenerator ima naslednje nazivno podane podatke: $S_n = 10\ \text{MVA}$, $U_{2n} = 3000\ \text{V}$, $f_n = 50\ \text{Hz}$, $\cos\varphi_{2n} = 0{.}7$, $X_s = 2\ \Omega$ (sinhronska reaktanca), $I_{vn} = 100\ \text{A}$. Generator deluje na **togo omrežje** z napetostjo $U_2 = U_{2n}$, vzbujanje in dotok mehanske moči sta nastavljena tako, da je generator obremenjen z **nazivnim tokom** $I_2 = I_{2n} = 100\ \text{A}$, vendar z faktorjem moči $\cos\varphi_2 = 1$ (brez jalove moči, ohmska obremenitev).
+Sinhronski turbogenerator ima naslednje nazivno podane podatke: $S_n = 10\ \text{MVA}$, $U_{2n} = 3000\ \text{V}$, $f_n = 50\ \text{Hz}$, $\cos\varphi_{2n} = 0{.}7$, $X_sr = 2$ (sinhronska reaktanca), $I_{vn} = 100\ \text{A}$. Generator deluje na **togo omrežje** z napetostjo $U_2 = U_{2n}$, vzbujanje in dotok mehanske moči sta nastavljena tako, da je generator obremenjen z **nazivnim tokom** $I_2 = I_{2n} = 100\ \text{A}$, vendar z faktorjem moči $\cos\varphi_2 = 1$ (brez jalove moči, ohmska obremenitev).
 
 ## a) Električna moč oddana v omrežje
 Pri $\cos\varphi = 1$ velja:
@@ -77,13 +77,13 @@ Kazalec $U_2$ je vodilni (leži na realni osi), tok $I_2$ je v fazi z napetostjo
 Formula za kolesni kot:
 
 $$
-\tan\delta = \frac{I_2 X_s \cdot \cos\varphi}{U_2 + I_2 X_s \cdot \sin\varphi}
+\tan\delta = \frac{I_2 X_{sr} \cdot \cos\varphi}{U_2 + I_2 X_{sr} \cdot \sin\varphi}
 $$
 
 Pri $\cos\varphi = 1$ in $\sin\varphi = 0$ postane:
 
 $$
-\tan\delta = \frac{I_2 X_s}{U_2} = \frac{100 \cdot 2}{3000} = \frac{200}{3000} = 0{.}0667
+\tan\delta = \frac{I_2 X_{sr}}{U_2} = \frac{100 \cdot 2}{3000} = \frac{200}{3000} = 0{.}0667
 $$
 
 Torej:
@@ -94,39 +94,35 @@ $$
 Kolesni kot je: $3{.}82^\circ$ 
 
 ## c) Potreben vzbujalni tok
-Najprej izračunamo inducirano EMN generatorja $E_0$ iz kazalčnega trikotnika:
+Najprej izračunamo inducirano napetost generatorja $E_0$ iz kazalčnega diagrama:
 
 $$
-E_0 = \sqrt{(U_2 + I_2 X_s \cdot \sin\varphi)^2 + (I_2 X_s \cdot \cos\varphi)^2}
+E_0 = \sqrt{(U_2 + I_2 X_{sr} \cdot \sin\varphi)^2 + (I_2 X_{sr} \cdot \cos\varphi)^2}
 $$
 
 Ker je $\sin\varphi = 0$, $\cos\varphi = 1$:
 
 $$
-E_0 = \sqrt{U_2^2 + (I_2 X_s)^2} = \sqrt{3000^2 + (100 \cdot 2)^2} = \sqrt{9\,040\,000}
+E_0 = \sqrt{U_2^2 + (I_2 X_{sr})^2} = \sqrt{3000^2 + (100 \cdot 2)^2}  \approx 3006\ \text{V}
 $$
 
-$$
-E_0 \approx 3006\ \text{V}
-$$
 
-Nazivna EMN v režimu z $\cos\varphi_n = 0{.}7$:
-
+Še za nazivno inducirano napetost:
 $$
-E_{0n} \approx 3163\ \text{V} \quad \text{(podana)}
+E_{0,n}=\sqrt{ (3000 + 100\cdot 2\cdot 0.714)^{2} + (100\cdot 2\cdot 0.7)^{2} } \approx 3145.9
 $$
 
 Iz razmerja:
 
 $$
-\frac{I_v}{I_{vn}} = \frac{E_0}{E_{0n}} = \frac{3006}{3163} \approx 0{.}95
+\frac{I_v}{I_{vn}} = \frac{E_0}{E_{0n}} = \frac{3006}{3145.9} = 0.955\ldots 
 $$
 
 $$
-I_v = 0{.}95 \cdot I_{vn} = 0{.}95 \cdot 100 = 95{.}0\ \text{A}
+I_v = 0{.}955 \cdot I_{vn} = 0{.}955 \cdot 100 = 95{.}5\ \text{A}
 $$
 
-Potreben vzbujalni tok je $I_v \approx 95{.}0\ \text{A}$
+Potreben vzbujalni tok je $I_v \approx 95{.}5\ \text{A}$
 
 # Naloga 3
 Trifazni asinhronski motor s kratkostično kletko ima podane naslednje nazivne podatke: $P_n = 15\ \text{kW}$ , $n_n = 576\ \text{min}^{-1}$ , $U_n = 400\ \text{V}$ , $f_n = 50\ \text{Hz}$ , $\cos\varphi_n = 0{.}78$ , $I_n = 34\ \text{A}$ , $P_{tr+vent} = 100\ \text{W}$ , $\frac{I_Z}{I_n} = 7$ , $\frac{M_Z}{M_n} = 1{.}8$ , Vezava: $\Delta$
@@ -151,19 +147,19 @@ Nazivni navor:
 $$
 M_n = \frac{P_{meh}}{\omega} = \frac{P_{meh}}{2\pi \cdot \frac{n_n}{60}} = \frac{15\,000}{2\pi \cdot \frac{576}{60}} = \frac{15\,000}{60{.}32} \approx 248{.}8\ \text{Nm}
 $$
-### 4. Vhodna moč $P_{cel}$
+### 4. Vhodna moč $P_{el}$
 $$
-P_{cel} = \sqrt{3} \cdot U \cdot I \cdot \cos\varphi = \sqrt{3} \cdot 400 \cdot 34 \cdot 0{.}78 \approx 18\,393\ \text{W}
+P_{el} = \sqrt{3} \cdot U \cdot I \cdot \cos\varphi = \sqrt{3} \cdot 400 \cdot 34 \cdot 0{.}78 \approx 18\,393\ \text{W}
 $$
 ### 5. Izkoristek $\eta$
 Izkoristek je razmerje med močjo na gredi in električno dovodeno močjo:
 $$
-\eta = \frac{P_n}{P_{cel}} = \frac{15\,000}{18\,393} \approx 0{.816} = 81{.6}\%
+\eta = \frac{P_n}{P_{el}} = \frac{15\,000}{18\,393} \approx 0{.816} = 81{.6}\%
 $$
 ### 6. Skupne izgube v statorju
 
 $$
-P_{el, n} = P_{vp} + P_{Cu} +P_{fe}
+P_{el, n} = P_{vp} + P_{Cu} +P_{Fe}
 $$
 $$
 P_{vp} = \frac{P_{meh}}{1-s} 
@@ -178,67 +174,40 @@ $$
 P_{el,n} = \frac{P_{n} + P_{tr,v}}{1-\left( \frac{n_{s}-n_{n}}{n_{s}} \right)} + P_{Cu} + P_{Fe} 
 $$
 $$
-P_{Cu} + P_{Fe} = 18393 - \frac{15000 + 100}{1 - \left( \frac{600-576}{600} \right)} = 2663.833\ldots
+P_{Cu} + P_{Fe} = 18393 - \frac{15000 + 100}{1 - \left( \frac{600-576}{600} \right)} = 2663.8W
 $$
-
 
 
 ## b) Kolikšna sta zagonski tok in navor, če motor zaganjamo v vezavi $Y$ pri 25 % nazivni napetosti?
-### 1. Zagonski tok
-Pri vezavi $\Delta$ je nazivni tok $I_n = 34\ \text{A}$. Zagonski tok pri tej vezavi bi bil:
 $$
-I_Z^{\Delta} = 7 \cdot I_n = 238\ \text{A}
+M_{zag}^{\Delta} =1.8 M_{n} = 1.8\cdot 248.8Nm = 447.84Nm
 $$
-Če motor zaženemo v **vezavi $Y$**, potem je napetost na navitju **nižja za faktor $\sqrt{3}$**, tok pa prav tako:
 $$
-I_Z^Y = \frac{I_Z^{\Delta}}{\sqrt{3}} \approx \frac{238}{1{.}732} \approx 137{.}4\ \text{A}
+\frac{U^{Y}}{U^{\Delta}} = \frac{1}{\sqrt{ 3 }}
 $$
-Če je napetost **znižana na 25 %**:
 $$
-I_Z = 0{.}25 \cdot 137{.}4 \approx 34{.}4\ \text{A}
+\frac{U_{25\%}^{Y}}{U^{\Delta}} = \frac{0.25}{\sqrt{ 3 }}
 $$
-### 2. Zagonski navor
-
-Zagonski navor pri nazivni napetosti v vezavi $\Delta$ je podan z razmerjem:
-
 $$
-M_{Z,\Delta} = 1.8 \cdot M_n = 1.8 \cdot 248.8 = 497.6\ \text{Nm}
+\frac{M_{zag,25\%}^{Y}}{M_{zag}^{\Delta}} = \left(\frac{U_{25\%}^{Y}}{U^{\Delta}}\right)^{2} \Rightarrow M_{zag,25\%}^{Y} =447.84 \cdot 0.0208 = 9.3Nm
 $$
 
-Pri zaganjanju v **vezavi $Y$** in znižani napajalni napetosti na **25 %** nazivnega nivoja ($0.25 \cdot U_L$), je napetost na **faznem navitju**:
-
-$$
-U_{Y,25\%} = \frac{0.25 \cdot U_n}{\sqrt{3}} = \frac{U_{\Delta}}{4 \cdot \sqrt{3}}
-$$
-
-Ker je zagonski navor sorazmeren s kvadratom fazne napetosti, se novi navor zmanjša za:
-
-$$
-M_{Z,Y25\%} = M_{Z,\Delta} \cdot \left(\frac{0.25}{\sqrt{3}}\right)^2 = 497.6 \cdot 0.0208 \approx 10.4\ \text{Nm}
-$$
 # Naloga 4
 Enosmerni motor s tujim vzbujanjem ima naslednje nazivne podatke:
-$P_n = 25\ \text{kW}$ , $n_n = 3000\ \text{min}^{-1}$ , $R_r = 0{.}05\ \Omega$ , $\eta_n = 0{.}95$ , $U_n = 230\ \text{V}$ , Padec napetosti na ščetkah: $\Delta U_{šč} = 2\ \text{V}$
-Motor naj deluje kot **generator**, pri čemer je obremenjen s tokom:
-
-$$
-I_1 = \frac{1}{4} I_{nL}
-$$
-
-Želimo določiti **vrtilno hitrost** $n$, pri kateri mora delovati, da je napetost na sponkah enaka nazivni ($U = U_n$).
+$P_n = 25\ \text{kW}$ , $n_n = 3000\ \text{min}^{-1}$ , $R_r = 0{.}05\ \Omega$ , $\eta_n = 0{.}95$ , $U_n = 230\ \text{V}$ , Padec napetosti na ščetkah: $\Delta U_{šč} = 2\ \text{V}$. Motor naj deluje kot generator, pri čemer je obremenjen s tokom: $I_1 = \frac{1}{4} I_{1,n}$. Želimo določiti vrtilno hitrost $n$, pri kateri mora delovati, da je napetost na sponkah enaka nazivni ($U = U_n$).
 
 ## Rešitev
 ### 1. Določimo nazivni tok
 Pri nazivni moči $P_n$ in izkoristku $\eta_n$, je električna vhodna moč motorja:
 
 $$
-P_{in} = \frac{P_n}{\eta_n} = \frac{25\,000}{0{.}95} \approx 26\,316\ \text{W}
+P_{el} = \frac{P_n}{\eta_n} = \frac{25\,000}{0{.}95} \approx 26\,316\ \text{W}
 $$
 
 Nazivni tok motorja:
 
 $$
-I_{nL} = \frac{P_{in}}{U_n} = \frac{26\,316}{230} \approx 114{.}42\ \text{A}
+I_{1,n} = \frac{P_{el}}{U_n} = \frac{26\,316}{230} \approx 114{.}42\ \text{A}
 $$
 ### 2. Tok generatorja
 Generator je obremenjen s četrtino nazivnega toka:
@@ -247,13 +216,13 @@ $$
 I_1 = \frac{1}{4} \cdot 114{.}42 \approx 28{.}6\ \text{A}
 $$
 ### 3. Napetostna enačba generatorja
-Za enosmerni **generator** velja (vključno s ščetkami):
+Za enosmerni generator velja (vključno s ščetkami):
 $$
 E = U + I_1 \cdot R_r + \Delta U_{šč}
 $$
 Vstavimo znane vrednosti:
 $$
-E = 230\ \text{V} + 28{.}6 \cdot 0{.}05 + 2 = 230 + 1{.}43 + 2 = 233{.}43\ \text{V}
+E = 230\ \text{V} + 28{.}6 \cdot 0{.}05 + 2 =  233{.}43\ \text{V}
 $$
 ### 4. Uporabimo linearno sorazmernost $E \sim n$
 
@@ -266,7 +235,7 @@ $$
 V nazivnem režimu motorja:
 
 $$
-E_n = U_n - I_{nL} \cdot R_r - \Delta U_{šč} = 230 - 114{.}42 \cdot 0{.}05 - 2 = 230 - 5{.}72 - 2 = 222{.}28\ \text{V}
+E_n = U_n - I_{1,n} \cdot R_r - \Delta U_{šč} = 230 - 114{.}42 \cdot 0{.}05 - 2 = 222{.}28\ \text{V}
 $$
 
 Zato:
