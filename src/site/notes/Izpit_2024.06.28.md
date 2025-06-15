@@ -40,28 +40,23 @@ Sinhrosnki turbogenerator $S_{n} = 10MVA$, $U_{2n} = 3000V$, $50Hz$, $\cos(\varp
 
 ## Rešitev
 
-### 1. Nazivni tok generatorja
-$$
-I_{2n} = \frac{S_n}{\sqrt{3} \cdot U_{2n}} = \frac{10\,000\,000}{\sqrt{3} \cdot 3000} \approx 1924{.}5\ \mathrm{A}
-$$
 ### 2. Električna moč v omrežje
-Ker je $\cos\varphi = 1$, velja $P = S$:
-$$
-P = \sqrt{3} \cdot U_{2n} \cdot I_{2n} \cdot \cos\varphi = \sqrt{3} \cdot 3000 \cdot 1924{.}5 \cdot 1 \approx \boxed{10\ \mathrm{MW}}
-$$
+
+$P_{el} = S_{n}\cdot \cos(\varphi_{2}') = 10MW$
 ### 3. Kolesni kot $\delta$
 $$
 \tan\delta = \frac{I_2 \cdot X_s \cdot \cos\varphi}{U_2 + I_2 \cdot X_s \cdot \sin\varphi}
-= \frac{1924{.}5 \cdot 2 \cdot 1}{3000 + 0} = 1{.}283
+= \frac{1 \cdot 2 \cdot 1}{1 + 0} = 2
 $$
+
 $$
-\delta = \arctan(1{.}283) \approx \boxed{52{.}3^\circ}
+\delta = \arctan(2) = 63.4^{\circ}
 $$
 ### 4. Vzbujalni tok
 Izračun inducirane napetosti $E_0$ za obe stanji:
 #### Novo stanje ($\cos\varphi = 1$):
 $$
-E_0' = \sqrt{(U_2)^2 + (I_2 \cdot X_s)^2} = \sqrt{3000^2 + (1924{.}5 \cdot 2)^2} \approx \boxed{4301\ \mathrm{V}}
+E_0' = \sqrt{(U_2)^2 + (I_2 \cdot X_s)^2} = \sqrt{1^2 + (1 \cdot 2)^2} = 2.2
 $$
 
 #### Nazivno stanje ($\cos\varphi = 0{.}7$):
@@ -71,12 +66,12 @@ E_0 = \sqrt{(U_2 + I_2 \cdot X_s \cdot \sin\varphi)^2 + (I_2 \cdot X_s \cdot \co
 $$
 
 $$
-= \sqrt{(3000 + 1924{.}5 \cdot 2 \cdot 0{.}714)^2 + (1924{.}5 \cdot 2 \cdot 0{.}7)^2} \approx \boxed{4582\ \mathrm{V}}
+= \sqrt{(1 + 1 \cdot 2 \cdot 0.714)^2 + (1 \cdot 2 \cdot 0.7)^2} = 2.802\ldots 
 $$
 
 $$
-\frac{I_v'}{I_{v,n}} = \frac{E_0'}{E_0} = \frac{4301}{4582} \approx 0{.}939
-\quad \Rightarrow \quad I_v' = 0{.}939 \cdot 100 = \boxed{93{.}9\ \mathrm{A}}
+\frac{I_v'}{I_{v,n}} = \frac{E_0'}{E_0} = \frac{2.2}{2.8} = 0.79
+\quad \Rightarrow \quad I_v' = 0.79 \cdot 100 = \boxed{79\ \mathrm{A}}
 $$
 # Naloga 3
 
