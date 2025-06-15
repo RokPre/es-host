@@ -70,13 +70,9 @@ $$
 
 
 # Naloga 3
-Sinhronski turbogenerator $S_n = 200\ \mathrm{MVA}$, $U_n = 15\ \mathrm{kV}$, $\cos\varphi_{2n} = 0{.}8$, $X_{sr} = 1{.}4$, $I_n = 300\ \mathrm{A}$ obratuje na togem nazivnem omrežju pri obremenitvi $S' = 100\ \mathrm{MVA}$, $\cos\varphi_{2}' = 0{.}6$. Za to obratovalno stanje določite potreben vzbujalni tok $I_1'$ in oba kolesna kota $\delta_n$ in $\delta'$ (obvezna tudi skica obeh obratovalnih stanj).
-
-## 1. Izračun nazivnega toka $I_{2n}$
-
-$
-I_{2n} = \frac{S_n}{\sqrt{3} \cdot U_{2n}} = \frac{200 \cdot 10^6}{\sqrt{3} \cdot 15\,000} \approx 7698\ \text{A}
-$
+Sinhronski turbogenerator $S_n = 200\ \mathrm{MVA}$, $U_n = 15\ \mathrm{kV}$, $\cos\varphi_{2n} = 0{.}8$, $X_{sr} = 1{.}4$, $I_{1,n} = 300\ \mathrm{A}$ obratuje na togem nazivnem omrežju pri obremenitvi $S' = 100\ \mathrm{MVA}$, $\cos\varphi_{2}' = 0{.}6$. Za to obratovalno stanje določite potreben vzbujalni tok $I_1'$ in oba kolesna kota $\delta_n$ in $\delta'$ (obvezna tudi skica obeh obratovalnih stanj).
+## 1. Tok
+$I_{1}' = I_{1,n} \frac{S'}{S_{n}} = 150A$
 ## 2. Kolesni kot $\delta_n$
 
 $\cos\varphi_{2n} = 0.8 \Rightarrow \sin\varphi_{2n} = 0.6$
@@ -86,28 +82,22 @@ $
 $
 
 $
-\tan\delta_n = \frac{7698 \cdot 1{.}4 \cdot 0{.}8}{15\,000 + 7698 \cdot 1{.}4 \cdot 0{.}6}\approx 0{.}4014
+\tan\delta_n = \frac{1 \cdot 1.4 \cdot 0.8}{1 + 1 \cdot 1.4 \cdot 0.6} = 0.608\ldots 
 $
 
 $
-\delta_n \approx \arctan(0{.}4014) \approx 21{.}9^\circ
+\delta_n = \arctan(0.608) = 31.3^{\circ}
 $
 ## 3. Kolesni kot $\delta'$
-
-Za obremenitev $S' = 100\ \text{MVA}$ in $\cos\varphi_2' = 0.6$:
-
-$
-I_{2}' = \frac{S'}{\sqrt{3} \cdot U_{2n}} = \frac{100 \cdot 10^6}{\sqrt{3} \cdot 15\,000} \approx 3849\ \text{A}
-$
 
 $\sin\varphi_2' = 0.8$
 
 $
-\tan\delta' = \frac{3849 \cdot 1{.}4 \cdot 0{.}6}{15\,000 + 3849 \cdot 1{.}4 \cdot 0{.}8} = \frac{3229{.}18}{19\,308{.}48} \approx 0{.}1672
+\tan\delta' = \frac{0.5 \cdot 1.4 \cdot 0.6}{1 + 0.5 \cdot 1.4 \cdot 0.8} = 0.27
 $
 
 $
-\delta' \approx \arctan(0{.}1672) \approx 9{.}5^\circ
+\delta' = \arctan(0.27) = 15.1 ^{\circ}
 $
 
 
