@@ -146,7 +146,7 @@ $$
 E' = 140 \Rightarrow I_{v} = 3.65A
 $$
 $$
-R_{skupna} = R_{V} + R_{dod} = \frac{E'}{I_{v}} = \frac{140}{3.65} = 38.3\Omega
+R_{skupna} = R_{v} + R_{dod} = \frac{E'}{I_{v}} = \frac{140}{3.65} = 38.3\Omega
 $$
 $$
 R_{dod} = 38.3-18 = 20.3\Omega 
@@ -164,7 +164,7 @@ Trifazni sinhronski generator s clindričnim rotorjem ima podano napisno tablico
 | Conn           | star          | Ins. Cl | H     | IP     | 00  |
 | S.N.           | ZGD300075-190 |         |       |        |     |
 
-Pogonski stroj zagotavlja nazivno hitrost vrjtenja, generator pa z nazivno napetostjo in nazivnim toko napaja tri v zvzevdo vezana grela. Breme in vzbujalni tok nato spremenimo tako, da se pri isti napetosti oddana moč zmanjša na polvico prejšnje. Na kolikšen delž začetne crednosti smo zmanjšali vzbujalni tok po spremembni bremna, če je relativna sinhrosnka reaktanca generatorja $X_{s} = 1.5$?
+Pogonski stroj zagotavlja nazivno hitrost vrjtenja, generator pa z nazivno napetostjo in nazivnim toko napaja tri v zvzevdo vezana grela. Breme in vzbujalni tok nato spremenimo tako, da se pri isti napetosti oddana moč zmanjša na polvico prejšnje. Na kolikšen delž začetne vrednosti smo zmanjšali vzbujalni tok po spremembni bremna, če je relativna sinhrosnka reaktanca generatorja $X_{s} = 1.5$?
 
 ## Rešitev
 

@@ -162,6 +162,7 @@ $$
 $$
 P_{om} = S_{om} \cdot \cos\varphi_{om} \approx 46{.}8 \cdot 0{.}816 \approx 38{.}2\ \mathrm{MW}
 $$
+# Lab
 ![Kolokvij.2.2.webp](/img/user/Attachments/izpiti/Kolokvij.2.2.webp)
 # Naloga 5
 Trifazni transformator s podano napisno tablico obratuje na nazivnem omrežju in napaja trifazni elektromotor.

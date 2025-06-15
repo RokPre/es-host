@@ -79,7 +79,6 @@ $
 $
 P_{om} = S_{om} \cdot \cos\varphi_{om} \approx 46{.}8 \cdot 0{.}816 \approx 38{.}2\ \mathrm{MW}
 $
-![Kolokvij.2.2.webp](/img/user/Attachments/izpiti/Kolokvij.2.2.webp)
 
 </div></div>
 

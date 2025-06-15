@@ -8,6 +8,7 @@
 Transformator naziv­ne moči $S_n = 200\ \mathrm{MVA}$ z nazivnim izkoristkom $\eta_n = 0{.}98$, razmerjem izgub na nazivnem omrežju $\xi_n = 3$,  se med trajnim obratovanjem segreje do nadtemperature $\Theta_{\text{max}} = 100\ \mathrm{K}$. Transformator uporabimo na omrežju z: $U = 0{.}8 \cdot U_n$, $f = 1{.}2 \cdot f_n$. Do katere nadtemperature se bo transformator segrel pri trajnem obratovanju na novem omrežju, če je obremenjen s tokom $I' = I_n$?
 
 ## Rešitev
+[[Izpit_2024.06.17#Rešitev\|Izpit_2024.06.17#Rešitev]]
 ### 1. Skupne izgube pri nazivnem obratovanju
 $$
 P_{\text{izg,n}} = (1 - \eta_n) \cdot S_n = 0{.}02 \cdot 200\,000\,000 = 4\,000\,000\ \mathrm{W}
@@ -98,7 +99,6 @@ $
 $
 P_{om} = S_{om} \cdot \cos\varphi_{om} \approx 46{.}8 \cdot 0{.}816 \approx 38{.}2\ \mathrm{MW}
 $
-![Kolokvij.2.2.webp](/img/user/Attachments/izpiti/Kolokvij.2.2.webp)
 
 </div></div>
 
@@ -252,3 +252,54 @@ $$
 P_{\text{izg,n}} = P_{\text{Fe}} + P_{\text{Cu,n}} = 105 + 292.7 = 397.7\ \text{W}
 $$
 # Naloga 6
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/izpit-2024-02-12/#naloga-6" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+# Naloga 6
+Trifazni asinhrosnki motor s kratkostično kletko in podano napisno tablico ima možnost prevezave statorkih navitji za dve različni hitrosti vrtenja:
+
+| Type    | T90 S4/2 IM B3 | 3 - MOTOR        |
+| ------- | -------------- | ---------------- |
+| Ser. No | G 763304       |                  |
+|         | 1.0/1.25kW     | 1390/2900 min^-1 |
+|         | 400V           | 50Hz             |
+|         | 2.5/3.6A       |                  |
+| cos(φ)  | 0.82/0.81      |                  |
+| Ins. CL | F              | IP 54            |
+
+S pomočjo Pronyjeve zavore bi radi izmerilill obremilno karakteristiko pri obeh crtilnih hitrostih. Na razpolago imamo tehtnico, ki lahko meri samo do $1kg$.
+
+## a) 
+Koliko najmanj mora biti dolga ročica Pronyjeve zavore?
+Upoštevamo:
+- maksimalna merljiva sila tehtnice: $F_{max} = 1\,\text{kg} \cdot 9.81\,\frac{\text{m}}{\text{s}^2} = 9.81\,\text{N}$
+- želimo izmeriti nazivni navor pri **nižji hitrosti** ($n = 1390\,\text{min}^{-1}$, $P = 1.0\,\text{kW}$)
+
+### 1. Izračun maksimalnega navora
+$
+M = \frac{P \cdot 60}{2\pi n} = \frac{1000 \cdot 60}{2\pi \cdot 1390} \approx 6.88\,\text{Nm}
+$
+
+### 2. Dolžina ročice
+$
+r = \frac{M}{F_{max}} = \frac{6.88}{9.81} \approx 0.702\,\text{m}
+$
+
+## b)
+Pri kateri nazivni hitrosti je izkoristek večji?
+
+Izračun izkoristka za vsako delovno točko:
+### 1. Nižja hitrost ($P = 1.0\,\text{kW}$, $I = 2.5\,\text{A}$, $\cos\varphi = 0.82$)
+$
+\eta_1 = \frac{1000}{\sqrt{3} \cdot 400 \cdot 2.5 \cdot 0.82} \approx \frac{1000}{1419.3} \approx 0.704
+$
+
+### 2. Višja hitrost ($P = 1.25\,\text{kW}$, $I = 3.6\,\text{A}$, $\cos\varphi = 0.81$)
+$
+\eta_2 = \frac{1250}{\sqrt{3} \cdot 400 \cdot 3.6 \cdot 0.81} \approx \frac{1250}{2011.5} \approx 0.621
+$
+Pri nižji nazivni hitrosti vrtenja ima stroj višji izkoristek.
+
+</div></div>
