@@ -14,7 +14,7 @@ $\eta =\frac{P_{2}}{P_{1}} =\frac{P_{1}-P_{izg}}{P_{1}}$
 $\xi =\frac{P_{cu}}{P_{fe}}$
 $\Theta = \Theta_{max} (1- e^{-t/\tau})$
 $\frac{\Theta_{max}'}{\Theta_{max}} = \frac{P_{izg}'}{P_{izg}}$
-$\frac{P_{fe}'}{P_{fe}} = \frac{f'}{f}\left( \frac{U'}{U} \right)^{2}$
+$\frac{P_{fe}'}{P_{fe}} = \frac{f'}{f}\left( \frac{B'}{B} \right)^{2}$
 $\frac{P_{cu}'}{P_{cu}}=\left(\frac{I'}{I}\right)^{2}$
 
 $u_{k\%} = \frac{U_{1,k}}{U_{1,n}}$
@@ -39,6 +39,7 @@ $P = \frac{mEU}{X_{sr}}\sin(\delta)$
 $I_{1} = \frac{S}{\sqrt{ 3 }\cdot U}$
 $\frac{I_{1}'}{I_{1}} = \frac{E_{0}'}{E_{0}}$
 $I\cdot \cos(\varphi_{2}) = \frac{E }{X_{sr}}\sin(\delta)$
+$\frac{P_{2}}{S_{2,n}} =\frac{U_{2,r}\cdot E_{0,r}}{X_{sr}}\sin(\delta)$
 $n = \frac{f \cdot 60}{p_{p}}$
 $M = \frac{P}{\omega} = \frac{P \cdot 60}{2\pi n}$
 $M = \frac{m_{s}}{2\pi n_{n}}\frac{U_{s}^{2}}{\left( R_{s}+\frac{R_{R}}{s} \right)^{2}+(X_{\delta,s} +X_{\delta,R})^{2}}\frac{R_{R}}{s}$
