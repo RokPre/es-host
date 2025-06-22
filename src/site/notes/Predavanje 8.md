@@ -151,7 +151,7 @@ $E_{rem}$ je inducirana napetost, ki je posledica remanentnega magnetnega polja,
 
 Zaradi kompleksnosti izračunavanja pogosto uporabimo karakteristiko zasičenja rotorja (k.z.r.) namesto dejanske $B\!-\!H$ krivulje stroja. Pri tem moramo biti pozorni, da če želimo nekoliko višjo inducirano napetost, lahko že preidemo v nasičenje — čez »koleno« — kar pomeni mnogo večji vzbujalni tok $I_v$, ki bi lahko povzročil pregretje oziroma poškodbe navitja.
 
-Kratek stik: [[predavanje 9#Kratki stik sinhronskega stroja\|kratek stik]].
+Kratek stik: [[Predavanje 9#Kratki stik sinhronskega stroja\|kratek stik]].
 
 # Sinhronizacia na omrežje
 Da lahko sinhronski generator priključimo na omrežje, moramo poskrbeti, da je pravilno priključen. To pomeni, da je prava faza vezana na pravo fazo. To preverimo z voltmetrom $\Delta U$. Da se ujameta frekvenci, pa preverimo z frekvenčnim merilnikom $f$.
@@ -183,5 +183,5 @@ Da oddajamo delovno moč, mora biti kot med napetostjo omrežja in tokom različ
 
 
 ___
-Naslednje poglavje: [[predavanje 9\|Predavanje 9]]
+Naslednje poglavje: [[Predavanje 9\|Predavanje 9]]
 Prejšnje predavanje: [[Predavanje 7\|Predavanje 7]]

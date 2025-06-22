@@ -195,6 +195,6 @@ Tako sistem v prostoru (sinusni signali) spremenimo v sistem, ki se lahko reguli
 
 ___
 Naslednje poglavje: [[Predavanje 11\|Predavanje 11]]
-Prejšnje predavanje: [[predavanje 9\|Predavanje 9]]
+Prejšnje predavanje: [[Predavanje 9\|Predavanje 9]]
 
 [^1]: https://youtu.be/vdeVVTltr1M?si=1E4iW2vzAGadXIla

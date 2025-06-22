@@ -51,7 +51,7 @@ Magična formula nam pove, da na magnetni pretok vplivamo samo z effektivno vred
 
 Zračna reža pa vpliva na magnetilni tok $I_{m}$, to je vidno iz enačbe:
 $$
-\hat{\Phi} = \frac{\Theta}{R_{mzr}} = \frac{\sqrt{ 2 }i_{m}N}{R_{mzr}}
+\hat{\Phi} = \frac{\Theta}{R_{mzr}} = \frac{\sqrt{ 2 }\cdot i_{m}N}{R_{mzr}}
 $$
 Kjer je magnetna upornost odvisna od zračne reže:
 $$
@@ -71,6 +71,7 @@ Za izmenične je ravno obrnjena smer. Ker imamo tuljavo (RL člen) nemoremo izra
 1. $u = e_{i}$
 2. $e_{i} = 4.44 N fBA$
 3. $B \to$ [[BH krivulja\|BH krivulja]] $\to H$
+
 4. $\frac{H}{N \;l_{sr}} = i_{m}$
 
 
